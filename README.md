@@ -4,8 +4,9 @@ Log of weekly research accomplishments
 ## October 08 - October 14
 - Meet with Christie to discuss DefltD basics - (10/09)
 - Create shared spreadsheet for monitoring stations in Willapa Bay, Grays Harbor, and surrounding area.
-- Research more into Delft-FM architecture and tools
+- Research more into Delft-FM architecture and tools.
   - Begin reading Delft-FM manual (https://content.oss.deltares.nl/delft3d/D-Flow_FM_User_Manual.pdf)
+    - /Figures/Delft3D_diagram
 
 - General research ideas for dissertation:
   - ADCP/water level gauges at mouth of Willapa River.
