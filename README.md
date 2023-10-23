@@ -1,8 +1,19 @@
 # RC-UW_ResearchLog
 Log of weekly research accomplishments
 
+## October 15 - October 21
+- Created Git repository on HYAK account for DelftFM files.
+- Read through Hydrodynamic section in Delft-FM manual.
+- Tried to understand SLURM scripts.
+- Attempted to understand 'D3DSUPDUSA-252 - Decreased Flow performance during parallelization with waves' gmail thread.
+
+To Do:
+- Attempt to create a test container and test SLURM job
+    - https://hyak.uw.edu/docs/hyak101/python/syllabus
+- Work on examples in Delft3D program
+
 ## October 08 - October 14
-- Meet with Christie to discuss DefltD basics - (10/09)
+- Meet with Christie to discuss Deflt3D basics - (10/09)
 - Create shared spreadsheet for monitoring stations in Willapa Bay, Grays Harbor, and surrounding area.
   - https://docs.google.com/spreadsheets/d/1Mqzt7Lxn9V12FRSPelFWJJG9nrxQnFr4MR76eoNUSmU/edit#gid=0
 - Research more into Delft-FM architecture and tools.
