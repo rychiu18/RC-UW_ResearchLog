@@ -1,6 +1,12 @@
 # RC-UW_ResearchLog
 Log of weekly research accomplishments
 
+## October 22 - October 28
+- Created temporary directory on hyak (/mmfs1/gscratch/derakhti/rchiu18).
+- Worked with Christie on HYAK basics (main files for Delft3D model run, submitting job, cancelling job, checking storage allocation, etc).
+- Tested rsync from HYAK server to local machine.
+- Requested new license key to renew DelftFM license on Alex's laptop.
+
 ## October 15 - October 21
 - Created Git repository on HYAK account for DelftFM files.
 - Read through Hydrodynamic section in Delft-FM manual.
