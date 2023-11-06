@@ -1,6 +1,16 @@
 # RC-UW_ResearchLog
 Log of weekly research accomplishments
 
+## October 29 - November 04
+- Loaded new Delft3D-FM license onto laptop.
+- Updated Laptop (took ~2 days)
+- Completed first two tutorials (creating a curvilinear grid and creating a triangular grid)
+	- Issue on Tut. 2 getting polygon shape to stay after trying to "Attach Scheldt harbor to Land Boundary".
+	- Able to Merge Grids but does NOT save as merged grid.
+- Researched Delft FM studies on land boundaries (in Notion "Delft FM Studies" doc).
+- Found historic highs for stream gauges in Grays Harbor and Willapa Bay.
+- Found FEMA flood zone maps for Grays Harbor county (updated 2020).
+
 ## October 22 - October 28
 - Created temporary directory on hyak (/mmfs1/gscratch/derakhti/rchiu18).
 - Worked with Christie on HYAK basics (main files for Delft3D model run, submitting job, cancelling job, checking storage allocation, etc).
