@@ -1,6 +1,26 @@
 # RC-UW_ResearchLog
 Log of weekly research accomplishments
 
+November 05 - November 11
+Research Ideas:
+- Lateral circulation at mouth of Willapa River and Chehalis River (affects H101 and H105)
+  - Motivation: Observe/model momentum budget at bends at mouth to look at bank erosion or salt transport
+    - Compare between WB and GH
+  - Would require instruments put out and bathymetry survey
+    - NCEI has 1/3 arc second (10m) resolution DEM for Willapa Bay (stops just west of Raymond)
+    - GH: https://catalog.data.gov/dataset/grays-harbor-p280-bathymetric-digital-elevation-model-noaa-nos-estuarine-bathymetry
+	- Updated 11/12/2020 (1/3 arc second)
+  - How does ebb/flood tides for stratified/unstratified flows affect the energy at the bends?
+    - Is it asymmetrical or symmetrical? (Primary, secondary flows that can affect erosion)
+    - https://journals.ametsoc.org/view/journals/phoc/49/6/jpo-d-18-0175.1.xml
+    - https://journals.ametsoc.org/view/journals/phoc/52/7/JPO-D-21-0298.1.xml
+      - Modeled
+    - https://www.sciencedirect.com/science/article/abs/pii/S027843431300126X
+    - https://people.duke.edu/~jlh82/pubs/Nidzieko_et_al_2009_JPO.pdf
+    - https://scholarcommons.sc.edu/cgi/viewcontent.cgi?article=1046&context=geol_facpub
+- Model vertical structure at mouth of rivers during storm events (compared to normal ebb/flood tides)
+- Look at time lag between Tokepoint station and Willapa River gauge (east of Raymond)
+
 ## October 29 - November 04
 - Loaded new Delft3D-FM license onto laptop.
 - Updated Laptop (took ~2 days).
