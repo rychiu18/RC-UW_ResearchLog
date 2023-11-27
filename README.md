@@ -1,6 +1,20 @@
 # RC-UW_ResearchLog
 Log of weekly research accomplishments
 
+November 19 - November 25
+- Ran DFM model (2x): [15448379, 15461143]
+  - 15448379:
+    - Changed FlowFM.mdu time to 5hr
+    - Changed test.slurm model runtime to 10hr
+    - Added email alert for model start/stop
+    - 20m run time for model (5hr)
+  - 15461143:
+    - Changed FlowFM.mdu time to 48hr
+    - Changed test.slurm model runtime to 24hr
+    - 2hr 54m run time for model (48hr)
+- Generated water level comparison plots for both models at Tokepoint mooring
+  - Water levels ~1.1m difference
+
 November 12 - November 18
 - Ran DFM model (Job ID: 15392871) on 11/17.
   - Changed time in "dimr_config_parallel.xml" from "<time>0 3600 2592000</time>" to "<time>0 3600 86400</time>" (should be 24 hours).
