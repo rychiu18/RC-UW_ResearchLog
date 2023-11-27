@@ -1,0 +1,45 @@
+Log of DelftFM runs
+
+- November 27 (15461143):
+  - Changed “FlowFM.mdu”
+    - Old
+      - Tend = 1054800 
+    - New (changed to 48 hours)
+      - Tend = 1209600
+  - Changed “test.slurm”
+    - Old
+      - #SBATCH --time=1:00:00 
+    - New
+      - #SBATCH --time=24:00:00
+  - Start test at 02:01pm on compute-bigmem partition
+    - Job ID: 15461143
+    - Uses 64 CPUs
+- November 25 (15448379):
+  - Changed “FlowFM.mdu”
+    - Old
+      - Tend = 2332800 
+    - New (changed to 5 hours)
+      - Tend = 1054800
+  - Changed “test.slurm”
+    - Old
+      - #SBATCH --time=1:00:00 
+    - New
+      - #SBATCH --time=10:00:00
+      - Added (email alert for test start and stop)
+        - #SBATCH --mail-type=ALL
+        - #SBATCH --mail-user=rchiu18
+  - Start test at 16:22pm on compute-bigmem partition
+    - Job ID: 15448379
+    - Uses 64 CPUs
+- November 17 (15392871):
+  - Changed “dimr_config_parallel.xml”:
+    - <time>0 3600 2592000</time> (old)
+    - <time>0 3600 86400</time> (24 hr)
+  - Changed “dimr_config_parallel_lib.xml”
+    - <time>0 3600 2592000</time> (old)
+    - <time>0 3600 86400</time> (24 hr)
+  - There are some times in the FlowFM.mdu file and FlowFM_month.mdu but did not change them
+  - Start test at 23:26 on compute-bigmem partition
+    - Job ID: 15392871
+  - Time limit exceeded based on slurm-15392871.out file
+    - Need to change other times in “FlowFM.mdu” file
