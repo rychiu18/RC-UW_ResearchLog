@@ -1,5 +1,20 @@
 Log of DelftFM runs
 
+- November 27 (15466558):
+  - Changed “FlowFM.mdu”
+    - Old
+      - Tend = 1209600 
+    - New (changed to 14 days)
+      - Tend = 2246400
+  - Changed “test.slurm”
+    - Old
+      - #SBATCH --time=24:00:00 
+    - New (changed to 2 day max run time)
+      - #SBATCH --time=48:00:00
+  - Start test at 17:13pm on compute-bigmem partition
+    - Job ID: 15466558
+    - Uses 64 CPUs
+
 - November 27 (15461143):
   - Changed “FlowFM.mdu”
     - Old
