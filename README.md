@@ -1,6 +1,15 @@
 # RC-UW_ResearchLog
 Log of weekly research accomplishments
 
+November 26 - December 02
+- Ran DFM model: 15466558:
+  - Changed FlowFM.mdu to 14 day run
+- Email with Julie Heilman (WSDOT) about potentially getting water mark surveys in Grays Harbor County and Pacific County
+- Added more to DFM analysis code
+  - Wave height, period, water level, wind speed, water velocity, air pressure
+  - Plotted river outflow transect data for Willapa River and it seems to match average flow data from USGS gage
+  - Need to monitor and document flooding events during this week's atmospheric storm event (12/04-07/2023) 
+
 November 19 - November 25
 - Ran DFM model (2x): [15448379, 15461143]
   - 15448379:
