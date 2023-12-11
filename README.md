@@ -1,7 +1,10 @@
 # RC-UW_ResearchLog
 Log of weekly research accomplishments
 
-November 26 - December 02
+## December 03 - December 09
+- Collected results of week's atmospheric river event
+
+## November 26 - December 02
 - Ran DFM model: 15466558:
   - Changed FlowFM.mdu to 14 day run
 - Email with Julie Heilman (WSDOT) about potentially getting water mark surveys in Grays Harbor County and Pacific County
@@ -10,7 +13,7 @@ November 26 - December 02
   - Plotted river outflow transect data for Willapa River and it seems to match average flow data from USGS gage
   - Need to monitor and document flooding events during this week's atmospheric storm event (12/04-07/2023) 
 
-November 19 - November 25
+## November 19 - November 25
 - Ran DFM model (2x): [15448379, 15461143]
   - 15448379:
     - Changed FlowFM.mdu time to 5hr
@@ -24,7 +27,7 @@ November 19 - November 25
 - Generated water level comparison plots for both models at Tokepoint mooring
   - Water levels ~1.1m difference
 
-November 12 - November 18
+## November 12 - November 18
 - Ran DFM model (Job ID: 15392871) on 11/17.
   - Changed time in "dimr_config_parallel.xml" from "<time>0 3600 2592000</time>" to "<time>0 3600 86400</time>" (should be 24 hours).
   - Changed time in "dimr_config_parallel_lib.xml" from "<time>0 3600 2592000</time>" to "<time>0 3600 86400</time>" (should be 24 hours).
@@ -36,7 +39,7 @@ November 12 - November 18
   - Look at WB or GB and start with comparison for water levels first.
   - Can later on look at influence of atmospheric forcing (resolution very large), and riverine influence.
 
-November 05 - November 11
+## November 05 - November 11
 Research Ideas:
 - Lateral circulation at mouth of Willapa River and Chehalis River (affects H101 and H105)
   - Motivation: Observe/model momentum budget at bends at mouth to look at bank erosion or salt transport
