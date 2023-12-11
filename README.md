@@ -4,7 +4,11 @@ Log of weekly research accomplishments
 ## December 03 - December 09
 - Collected results of week's atmospheric river event
 ![12/02-12/10 Storm Event (Precip, APress, WSpd, Water Level)](Figures/Dec23_01.png)
+Figure 1: 12/02-12/10 Storm Event (Precip, APress, WSpd, Water Level)
+
+
 ![12/02-12/10 Storm Event (H_s, T_s, SDir)](Figures/Dec23_02.png)
+Figure 2: 12/02-12/10 Storm Event (H_s, T_s, SDir)
 
 ## November 26 - December 02
 - Ran DFM model: 15466558:
