@@ -1,5 +1,15 @@
 Log of DelftFM runs
 
+- 12/18/23 (15751378)
+  - dimr_config_parallel.xml 
+    - Removed "<start name="Waves"/>" (Line 36)
+    - Removed 49-52: </component>....<component name="Waves">
+  - FAILED:
+      =   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+      =   RANK 0 PID 88273 RUNNING AT n3008
+      =   KILLED BY SIGNAL: 9 (Killed)
+  - Maybe .dimr file?
+
 - 12/18/23 (15749723)
   - All *.pli's
     - Added 0's and "0001, 0002, 0003, etc" to end of line
