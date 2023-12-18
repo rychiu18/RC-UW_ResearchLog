@@ -1,6 +1,34 @@
 Log of DelftFM runs
 
-- November 27 (15466558):
+- 12/18/23 (15749723)
+  - All *.pli's
+    - Added 0's and "0001, 0002, 0003, etc" to end of line
+  - FAILED
+
+- 12/18/23 (15749720)
+  - Changed for TwinHarbors_test02
+    -  test.slurm
+      - Changed line 23 to:
+        - #SBATCH --chdir=/mmfs1/gscratch/derakhti/shared/rchiu18/TwinHarbors_test02
+    -  submit_singularity.sh
+      - Changed line 99 to:
+        - cd /mmfs1/gscratch/derakhti/shared/rchiu18/TwinHarbors_test02/dflowfm
+      - Changed line 68 to:
+        - cd /mmfs1/gscratch/derakhti/shared/rchiu18/TwinHarbors_test02
+    - FlowFM.mdu
+      - Changed line 135 to:
+        - Wavemodelnr  = 0
+    - Discharge.bc
+      -  Removed Q from each river
+    - All *.pli
+      - Removed Q data
+    - ncep*.amp, .amv, amu
+      - n_cols = 0 (before 32)
+      - n_rows = 0 (before 32)
+  - FAILED 
+
+
+- 11/27/23 (15466558):
   - Changed “FlowFM.mdu”
     - Old
       - Tend = 1209600 
@@ -15,7 +43,7 @@ Log of DelftFM runs
     - Job ID: 15466558
     - Uses 64 CPUs
 
-- November 27 (15461143):
+- 11/27/23 (15461143):
   - Changed “FlowFM.mdu”
     - Old
       - Tend = 1054800 
@@ -29,7 +57,7 @@ Log of DelftFM runs
   - Start test at 02:01pm on compute-bigmem partition
     - Job ID: 15461143
     - Uses 64 CPUs
-- November 25 (15448379):
+- 11/25/23 (15448379):
   - Changed “FlowFM.mdu”
     - Old
       - Tend = 2332800 
@@ -46,7 +74,7 @@ Log of DelftFM runs
   - Start test at 16:22pm on compute-bigmem partition
     - Job ID: 15448379
     - Uses 64 CPUs
-- November 17 (15392871):
+- 11/17/23 (15392871):
   - Changed “dimr_config_parallel.xml”:
     - <time>0 3600 2592000</time> (old)
     - <time>0 3600 86400</time> (24 hr)
