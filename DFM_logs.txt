@@ -4,6 +4,7 @@ Log of DelftFM runs
 - Job 15752705
   - dimr_config_parallel.xml
     - Removed </time> and moved <start name="DflowFM"/> outside to control
+  - ~9 hours for fun
 - Job 15752666
   - Recopied *.pli files b/c it contained transect locations
   - FAILED
