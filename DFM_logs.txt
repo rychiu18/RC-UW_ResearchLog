@@ -1,8 +1,7 @@
 Log of DelftFM runs
 
 12/21/23:
-- Job
-  - TwinHarbors_test03
+- Job (TwinHarbors_test03)
   - test.slurm
     - #SBATCH --chdir=/mmfs1/gscratch/derakhti/users/yzlou/Delft3dfm/TwinHarbors_test03 (line 19)
   - submit_singularity.sh
@@ -17,21 +16,21 @@ Log of DelftFM runs
 
 
 12/18/23:
-- Job 15752705
+- Job 15752705 (TwinHarbors_test02)
   - dimr_config_parallel.xml
     - Removed </time> and moved <start name="DflowFM"/> outside to control
   - ~9 hours for fun
-- Job 15752666
+- Job 15752666 (TwinHarbors_test02)
   - Recopied *.pli files b/c it contained transect locations
   - FAILED
     - Might have to do something with allocation of nodes/proc
-- Job 15752640
+- Job 15752640 (TwinHarbors_test02)
   - Discharge.bc
     - Added for discharge values
       1036800  0
       2332800  0
   - FAILED
-- Job 15751378
+- Job 15751378 (TwinHarbors_test02)
   - dimr_config_parallel.xml 
     - Removed "<start name="Waves"/>" (Line 36)
     - Removed 49-52: </component>....<component name="Waves">
@@ -40,11 +39,11 @@ Log of DelftFM runs
       =   RANK 0 PID 88273 RUNNING AT n3008
       =   KILLED BY SIGNAL: 9 (Killed)
   - Maybe .dimr file?
-- Job 15749723
+- Job 15749723 (TwinHarbors_test02)
   - All *.pli's
     - Added 0's and "0001, 0002, 0003, etc" to end of line
   - FAILED
-- Job 15749720
+- Job 15749720 (TwinHarbors_test02)
   - Changed for TwinHarbors_test02
     -  test.slurm
       - Changed line 23 to:
@@ -67,7 +66,7 @@ Log of DelftFM runs
   - FAILED 
 
 11/27/23:
-- Job 15466558)
+- Job 15466558
   - Changed “FlowFM.mdu”
     - Old
       - Tend = 1209600 
