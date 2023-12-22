@@ -1,6 +1,17 @@
 # RC-UW_ResearchLog
 Log of weekly research accomplishments
 
+## December 17 - December 23
+- Looked at tide model and compared with previous model with all forcings
+- Ran new model for December 2023 storm - TwinHarbors_test03
+
+## December 10 - December 16
+- Laid out OSM poster roadmap
+	- Run different models (tides, tides+Q, tides+SS, tides+Q+SS) for December storm event
+- Ran 1999 model with just tides (or tried to) - TwinHarbors_test02
+- Think about different reanalysis products for wind and atm. pressure forcing for atmospheric forcing in the model with higher resolution than CFSR (Stantec uses) which is ~38km
+- Registered for OSM 2024
+
 ## December 03 - December 09
 - Collected results of week's atmospheric river event
 ![12/02-12/10 Storm Event (Precip, APress, WSpd, Water Level)](Figures/Dec23_01.png)
