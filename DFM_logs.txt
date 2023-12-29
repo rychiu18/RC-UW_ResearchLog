@@ -19,6 +19,14 @@ Log of DelftFM runs
     - ExtForceFile = FlowFM_test.ext # Old format for external forcings file *.ext, link with tim/cmp-format boundary conditions specification (line 156)
   - dimr)config_parallel.xml
     - Removed waves and parallel brackets pertaining to waves
+  - FlowFM_000*.mdu
+    - RefDate = 20231101 # Reference date [YYYY-MM-DD HH:MM:SS] (line 141)
+    - TStart = 1296000 # Start time w.r.t. RefDate (in TUnit) (line 148)
+    - TStop = 3628800 # Stop  time w.r.t. RefDate (in TUnit) (line 149)
+    - ExtForceFile = FlowFM.ext # Old format for external forcings file *.ext, link with tim/cmp-format boundary conditions specification (line 156)
+    - ExtForceFileNew = FlowFM_bnd.ext # New format for external forcings file *.ext, link with bc-format boundary conditions specification (line 157)
+    - HisInterval = 3600 1296000 3628800 # History output times, given as 'interval' 'start period' 'end period' (line 184)
+    - MapInterval = 3600 1296000 2160000 # Map file output times, given as 'interval' 'start period' 'end period' (line 187) 
 
 12/18/23:
 - Job 15752705 (TwinHarbors_test02)
