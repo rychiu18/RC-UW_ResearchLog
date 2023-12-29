@@ -27,6 +27,7 @@ Log of DelftFM runs
     - ExtForceFileNew = FlowFM_bnd.ext # New format for external forcings file *.ext, link with bc-format boundary conditions specification (line 157)
     - HisInterval = 3600 1296000 3628800 # History output times, given as 'interval' 'start period' 'end period' (line 184)
     - MapInterval = 3600 1296000 2160000 # Map file output times, given as 'interval' 'start period' 'end period' (line 187) 
+  - Took 10 minutes to complete
 
 12/18/23:
 - Job 15752705 (TwinHarbors_test02)
