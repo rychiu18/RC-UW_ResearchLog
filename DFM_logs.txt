@@ -1,7 +1,7 @@
 Log of DelftFM runs
 
-01/03/24:
-- Job (TwinHarbors_test03)
+01/04/24:
+- Job 15952640 (TwinHarbors_test03)
   - added tides back into external forcing file
   - Changed filename of Discharge.bc to Discharge_orig.bc
     - Emptied contents of Dicharge.bc
