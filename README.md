@@ -1,6 +1,14 @@
 # RC-UW_ResearchLog
 Log of weekly research accomplishments
 
+# 2024
+
+# 2023
+## December 24 - January 06
+- Retrieved GFS data from LiveOcean server (Parker) and transferred onto Google Drive
+- Ran model for December 2023 storm with only tides (~10m run)
+- Started creating data analysis scripts for December storms
+
 ## December 17 - December 23
 - Looked at tide model and compared with previous model with all forcings
 - Ran new model for December 2023 storm - TwinHarbors_test03
