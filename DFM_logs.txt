@@ -5,6 +5,7 @@ Log of DelftFM runs
   - added tides back into external forcing file
   - Changed filename of Discharge.bc to Discharge_orig.bc
     - Emptied contents of Dicharge.bc
+  - Took 19 hours
 
 12/28/23:
 - Job 15836826(TwinHarbors_test03)
@@ -34,6 +35,7 @@ Log of DelftFM runs
     - HisInterval = 3600 1296000 3628800 # History output times, given as 'interval' 'start period' 'end period' (line 184)
     - MapInterval = 3600 1296000 2160000 # Map file output times, given as 'interval' 'start period' 'end period' (line 187) 
   - Took 10 minutes to complete
+  - Did not work, forgot to put in tides in the external forcing file!
 
 12/18/23:
 - Job 15752705 (TwinHarbors_test02)
