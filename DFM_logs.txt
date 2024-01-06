@@ -1,11 +1,17 @@
 Log of DelftFM runs
 
 01/04/24:
+- Job 15966402 (TwinHarbors_test04)
+  - Removed FlowFM_0* files (cache and mdu) and tw_v60m_1999_0*.net.nc files
+
+
+01/04/24:
 - Job 15952640 (TwinHarbors_test03)
   - added tides back into external forcing file
   - Changed filename of Discharge.bc to Discharge_orig.bc
     - Emptied contents of Dicharge.bc
   - Took 19 hours
+  - Only had one .his file for water level and winds (FlowFM_0000.his), other FlowFM_0001 and up did not have any .his files 
 
 12/28/23:
 - Job 15836826(TwinHarbors_test03)
