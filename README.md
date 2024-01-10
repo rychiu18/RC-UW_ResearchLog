@@ -2,6 +2,10 @@
 Log of weekly research accomplishments
 
 # 2024
+## January 07 - January 13
+- Ran new DFM model with only tides (previous run had tide forcings removed, but added back in)
+- Created MakeDischarge.py script to take USGS discharge and output new file to make readable for DFM
+- 
 
 # 2023
 ## December 24 - January 06
