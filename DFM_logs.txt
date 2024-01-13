@@ -1,11 +1,24 @@
 Log of DelftFM runs
 
+01/10/24:
+- Job (TwinHarbors_test04)
+  - Changed the filepaths to record output to dflow/output/
+  - Used MakeDischarge.py file from local to create:
+    - 'willapa_discharge.bc'
+    - 'wynoochee_discharge.bc'
+    - 'chehalis_discharge.bc'
+    - 'columbia_discharge.bc'
+    - Need to do Naselle, and Satsop
+    - Need to make transects for discharge locations for Naselle and Satsop
+    - Change FlowFM_bnd_test.ext to include discharges
+    - Need to fill in atm files (amp, amu, amv) and add back into FlowFM_test.ext
+
+
 01/04/24:
 - Job 15966402 (TwinHarbors_test04)
   - Removed FlowFM_0* files (cache and mdu) and tw_v60m_1999_0*.net.nc files
   - Ran from TwinHarbors_test04 but saved in TwinHarbors_test03
   - Worked! Took 20 hours to complete
-
 
 01/04/24:
 - Job 15952640 (TwinHarbors_test03)
