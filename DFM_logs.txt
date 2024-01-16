@@ -1,7 +1,18 @@
 Log of DelftFM runs
 
+01/15/24:
+- TwinHarbors_test05
+  - Run only includes wind and pressure forcing
+  - Changed to run for only 2 days (172800 seconds)
+    - TStart = 1296000
+    - TStop = 1468800
+  - Created new u, v, and pressure files (ncep_20231115_to_20231116)
+    - Start lower left center at [43.0348848, -130.05956692]
+    - ∆x = 12km; ∆y = 12km
+  - Updated external forcing files to only contain amu, amv, and amp
+
 01/10/24:
-- Job (TwinHarbors_test04)
+- (TwinHarbors_test04) - never completed, come back to it later on
   - Changed the filepaths to record output to dflow/output/
   - Used MakeDischarge.py file from local to create:
     - 'willapa_discharge.bc'
