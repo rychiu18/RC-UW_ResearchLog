@@ -1,6 +1,20 @@
 Log of DelftFM runs
 
+01/17/24:
+- Job 16136872 (TwinHarbors_test05)
+  - Added 2 spaces between each value and 2 spaces before the start of each array in the ncep_20231201.amp file (matching the ncep_1999 files)
+  - Added 6 spaces between each value and 6 spaces before the start of each array in the ncep_20231201.amu/amv files (matching the ncep_1999 files)
+  - Still only 51 grid points after running!
+- Job 16135777 (TwinHarbors_test05)
+  - Change grid_unit to ‘degree’ instead of ‘degrees’
+  - Add space before first line for output files (u,v,p)
+  - Only write to 3 floats for pressure and wind
+  - Still only 51 grid points after running!
+
 01/16/24:
+- Job 16130670 (TwinHarbors_test05)
+  - Changed amp, amu, and amv dx and dy to degrees instead of 12km
+  - Still same, only had 51 grid points that were off
 - Job 16127385 (TwinHarbors_test05)
   - Run only includes wind and pressure forcing
   - Changed to run for only 6 hours (21600 seconds)
@@ -15,7 +29,7 @@ Log of DelftFM runs
   - Added FlowFM_00* and tw_v60_1999_00* files from TwinHarbors_test03 to file
     - Changed the start reference date and TStart and TStop in each file
   - Completed run in ~3 minutes!
-    - Only created 50 grid points of uwind, vwind, and pressure data
+    - Only created 51 grid points of uwind, vwind, and pressure data
 
 01/10/24:
 - (TwinHarbors_test04) - never completed, come back to it later on
