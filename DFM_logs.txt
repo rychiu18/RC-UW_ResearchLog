@@ -1,15 +1,20 @@
 Log of DelftFM runs
 
-01/15/24:
-- TwinHarbors_test05
+01/16/24:
+- Job 16127385 (TwinHarbors_test05)
   - Run only includes wind and pressure forcing
-  - Changed to run for only 2 days (172800 seconds)
-    - TStart = 1296000
-    - TStop = 1468800
-  - Created new u, v, and pressure files (ncep_20231115_to_20231116)
+  - Changed to run for only 6 hours (21600 seconds)
+    - Starting from 12-01-23
+    -   TStart = 0
+    -   TStop = 21600
+  - Created new u, v, and pressure files (ncep_20231201_to_20231202)
     - Start lower left center at [43.0348848, -130.05956692]
     - ∆x = 12km; ∆y = 12km
   - Updated external forcing files to only contain amu, amv, and amp
+    - For TIME = n hours since 12-01-23 00:00, remember to put in n+1 hours for forcing
+  - Added FlowFM_00* and tw_v60_1999_00* files from TwinHarbors_test03 to file
+    - Changed the start reference date and TStart and TStop in each file
+  - Completed run in ~3 minutes!
 
 01/10/24:
 - (TwinHarbors_test04) - never completed, come back to it later on
