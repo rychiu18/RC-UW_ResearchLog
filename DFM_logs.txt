@@ -2,6 +2,7 @@ Log of DelftFM runs
 
 01/28/24:
 - Job 16283562 (TwinHarbors_test05)
+  - Run for only 6 hours of time starting from 12012023 with only MET data
   - Rewrote .amp, .amu, .amv files
     - Changed to x_llcenter, y_llcenter
     - Resized to 52x71 dimensions based on interpolation
