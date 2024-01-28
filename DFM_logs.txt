@@ -1,5 +1,12 @@
 Log of DelftFM runs
 
+01/28/24:
+- Job 16283562 (TwinHarbors_test05)
+  - Rewrote .amp, .amu, .amv files
+    - Changed to x_llcenter, y_llcenter
+    - Resized to 52x71 dimensions based on interpolation
+    - Wrote output to start from upper left corner
+
 01/17/24:
 - Job 16136872 (TwinHarbors_test05)
   - Added 2 spaces between each value and 2 spaces before the start of each array in the ncep_20231201.amp file (matching the ncep_1999 files)
