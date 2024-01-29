@@ -1,5 +1,13 @@
 Log of DelftFM runs
 
+01/29/24:
+- Job 16288886 (TwinHarbors_test06)
+  - Model for full MET (110123-121123) and tide data
+  - Created .amp, .amu, and .amv files with matrix for entire time period
+  - Changed .mdu files to correct time (27 day run)
+  - Added back boundary forcing for tides
+  - Changed MET forcing files in .ext file
+
 01/28/24:
 - Job 16283562 (TwinHarbors_test05)
   - Run for only 6 hours of time starting from 12012023 with only MET data
