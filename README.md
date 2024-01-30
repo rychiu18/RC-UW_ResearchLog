@@ -2,6 +2,15 @@
 Log of weekly research accomplishments
 
 # 2024
+# January 28 - February 03
+- Running DFM model with MET data, tides, and discharge (TwinHarbors_test07)
+
+## January 14 - 27
+- Created MakeAtmGrid.py which interpolates rotated LiveOcean data (pressure, uwind, vwind to square grid for 12km resolution
+	- Had few iterations due to creating MET forcing file starting from lower left corner (just like LiveOcean), rather than a normal grid (starting from upper left corner like how DFM reads it even though it specifies the starting LLC coordinate
+- Ran DFM (TwinHarbors_test05) with just MET data and results aren't too off (<O(1))
+- Running DFM model with MET data and tides only to look at results (TwinHarbors_test06)
+
 ## January 07 - January 13
 - Ran new DFM model with only tides (previous run had tide forcings removed, but added back in)
 - Created MakeDischarge.py script to take USGS discharge and output new file to make readable for DFM
