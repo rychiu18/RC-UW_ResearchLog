@@ -4,6 +4,7 @@ Log of DelftFM runs
 - Job 16352608 (TwinHarbors_test06)
   - Switched .dimr file back to exclude waves
   - Ran but cancelled after 9 hours 48 minutes
+  - Still has that spike right after 40 hours
 
 - Job 16352586 (TwinHarbors_test06)
   - Placed back FlowFM_000*.mdu and .cache files
