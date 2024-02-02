@@ -1,6 +1,20 @@
 Log of DelftFM runs
 
 02/01/24:
+- Job 16352608 (TwinHarbors_test06)
+  - Switched .dimr file back to exclude waves
+  - Ran but cancelled after 9 hours 48 minutes
+
+- Job 16352586 (TwinHarbors_test06)
+  - Placed back FlowFM_000*.mdu and .cache files
+  - Placed back tw_v60m_1999_000*_net.nc files
+  - If the .cache, .mdu, and _net.nc files aren't in, model won't run!
+  - Changed the .dimr file back to include WAVES
+  - Did not work when running wave portion (even though it's switched off in .mdu file
+
+- Job 16352462 (TwinHarbors_test06)
+  - Changed back to old submit_singularity.sh and test.slurm
+  - Could not find FlowFM_000*.mdu files!
 - Job 16351860 (TwinHarbors_test06)
   - Added newer test.slurm and submit_singularity.sh file (from Yingzhong)
     - test.slurm (changed nodes, ntasks-per-node, time, 'OMP_NUM_THREADS_SWAN=4')
@@ -10,6 +24,8 @@ Log of DelftFM runs
       - Changed ncol and nrow to 83x83
       - Changed lower left center x,y start coordinate to minimum on interpolated grid
     - Changed time to run for 4 days (345600 seconds) still starting from 11-15-2023 in .mdu file
+  - Ran with submit_singularity_new.sh and test_new.slurm from Yingzhong (but did not work)
+    - "Error opening file FlowFM_0013.mdu"
     
 
 01/29/24:
