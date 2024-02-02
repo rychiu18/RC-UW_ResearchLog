@@ -1,5 +1,17 @@
 Log of DelftFM runs
 
+02/01/24:
+- Job 16351860 (TwinHarbors_test06)
+  - Added newer test.slurm and submit_singularity.sh file (from Yingzhong)
+    - test.slurm (changed nodes, ntasks-per-node, time, 'OMP_NUM_THREADS_SWAN=4')
+    - submit_singularity.sh (changed to nNodes=1, nProc=16)
+    - Deleted FlowFM_000*.mdu, FlowFM_000*.cache, tw_v60m_1999_000*_net.nc files (should work without)
+    - Recreated interpolation over new meshgrid for .amp, .amu, and .amv files for dx=0.1, dy=0.1
+      - Changed ncol and nrow to 83x83
+      - Changed lower left center x,y start coordinate to minimum on interpolated grid
+    - Changed time to run for 4 days (345600 seconds) still starting from 11-15-2023 in .mdu file
+    
+
 01/29/24:
 - Job 16288886 (TwinHarbors_test06)
   - Model for full MET (110123-121123) and tide data
