@@ -1,10 +1,17 @@
 Log of DelftFM runs
 
+02/04/24:
+- Job 16379406 (TwinHarbors_test06)
+  - Rewrote met forcing and verified output was correct (MakeAtmGrid_v6.py)
+  - Ran model again for 4 days to see if wind output is still psychedelic
+  - Started at 01:41:00
+
 02/01/24:
 - Job 16352608 (TwinHarbors_test06)
   - Switched .dimr file back to exclude waves
-  - Ran but cancelled after 9 hours 48 minutes
+  - Ran but cancelled after 9 hours 48 minutes (Got 50 hours of data - 2 days and 2 hours)
   - Still has that spike right after 40 hours
+  - Wind field looks weird
 
 - Job 16352586 (TwinHarbors_test06)
   - Placed back FlowFM_000*.mdu and .cache files
