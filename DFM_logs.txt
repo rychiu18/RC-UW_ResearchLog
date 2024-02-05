@@ -1,6 +1,13 @@
 Log of DelftFM runs
 
 02/05/24:
+- Job (TwinHarbors_test07)
+  - Created TwinHarbors_test07 to run 7 days (12/01-12/07/23) for storm and test to see if jump in water level is observed after ~46 hours
+  - Changed test.slurm back to mem=200G, and time=72:00:00
+  - Wrote new .amp, .amu, and .amv files for 7 days of forcing
+
+
+02/05/24:
 - Job 16385874 (TwinHarbors_test06)
   - Rewrote analysis script to plotDFMAtm_v2.py and verified it worked for all data (waterdepth at least)
   - Put back atmospheric forcing to model
