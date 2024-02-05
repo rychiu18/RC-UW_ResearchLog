@@ -1,9 +1,10 @@
 Log of DelftFM runs
 
 02/04/24:
-- Job (TwinHarbors_test06)
+- Job 16383865 (TwinHarbors_test06)
   - Made ONLY tides (turned off MET forcing to see if it causes the weird data)
     - Removed MET forcing in "FlowFM_test.ext" file
+  - Started at 18:27, cancelled at 18:35, 8 minute runtime
 - Job 16379406 (TwinHarbors_test06)
   - Rewrote met forcing and verified output was correct (MakeAtmGrid_v6.py)
   - Ran model again for 4 days to see if wind output is still psychedelic
