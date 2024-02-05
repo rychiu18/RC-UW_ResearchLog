@@ -4,7 +4,7 @@ Log of DelftFM runs
 - Job 16379406 (TwinHarbors_test06)
   - Rewrote met forcing and verified output was correct (MakeAtmGrid_v6.py)
   - Ran model again for 4 days to see if wind output is still psychedelic
-  - Started at 01:41:00
+  - Started at 01:41:00 and stopped at 01:05:00 (~12 hour run resulted in 54 hours of data)
 
 02/01/24:
 - Job 16352608 (TwinHarbors_test06)
