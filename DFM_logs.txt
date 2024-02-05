@@ -1,10 +1,20 @@
 Log of DelftFM runs
 
 02/04/24:
+- Job 16385359 (TwinHarbors_test06)
+  - Changed .mdu files RefDate to 20231101 (before it was referenced to 20231115)
+    - This means changing the TStart and TStop referenced to 20231101 (before it was referenced to 20231115)
+      - TStart = 1209600
+      - TStop = 1555200
+    - Also changing HisInterval and MapInterval to reference to 20231101
+      - HisInterval                       = 3600 1209600 1555200
+      - MapInterval                       = 3600 1209600 1555200
+  - Started at 21:44, cancelled at  (model run time of)
 - Job 16383865 (TwinHarbors_test06)
   - Made ONLY tides (turned off MET forcing to see if it causes the weird data)
     - Removed MET forcing in "FlowFM_test.ext" file
   - Started at 18:27, cancelled at 18:35, 8 minute runtime
+  - Still weird data
 - Job 16379406 (TwinHarbors_test06)
   - Rewrote met forcing and verified output was correct (MakeAtmGrid_v6.py)
   - Ran model again for 4 days to see if wind output is still psychedelic
