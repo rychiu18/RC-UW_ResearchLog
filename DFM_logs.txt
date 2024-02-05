@@ -6,6 +6,7 @@ Log of DelftFM runs
   - Running with only tides to compare with tides and met forcing to see if water level anomalies still show after 40 hours
   - Using Yingzhong's new test.slurm and submit_singularity.sh configurations
   - Removed atmospheric forcing from the FlowFM_test.ext file
+  - Started at 15:54, ended ()
 
 - Job 16391479 (TwinHarbors_test07)
   - Created TwinHarbors_test07 to run 7 days (12/01-12/07/23) for storm and test to see if jump in water level is observed after ~46 hours
