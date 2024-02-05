@@ -1,12 +1,14 @@
 Log of DelftFM runs
 
-02/04/24:
+02/05/24:
 - Job 16385874 (TwinHarbors_test06)
   - Rewrote analysis script to plotDFMAtm_v2.py and verified it worked for all data (waterdepth at least)
   - Put back atmospheric forcing to model
   - Had to change partition to compute (instead of compute-bigmem)
     - Also had to change SBATCH --time=48:00:00 to keep within time limit (old was 72:00:00)
     - Changed mem=200G to mem=100G (this made it work on compute partition!)
+  - Started 00:06 and ended 09:11
+02/04/24:
 - Job 16385359 (TwinHarbors_test06)
   - Changed .mdu files RefDate to 20231101 (before it was referenced to 20231115)
     - This means changing the TStart and TStop referenced to 20231101 (before it was referenced to 20231115)
