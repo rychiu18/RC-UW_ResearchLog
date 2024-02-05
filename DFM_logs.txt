@@ -9,7 +9,7 @@ Log of DelftFM runs
     - Also changing HisInterval and MapInterval to reference to 20231101
       - HisInterval                       = 3600 1209600 1555200
       - MapInterval                       = 3600 1209600 1555200
-  - Started at 21:44, cancelled at  (model run time of)
+  - Started at 21:44, cancelled at 22:13 (model run time of 28 minutes)
 - Job 16383865 (TwinHarbors_test06)
   - Made ONLY tides (turned off MET forcing to see if it causes the weird data)
     - Removed MET forcing in "FlowFM_test.ext" file
