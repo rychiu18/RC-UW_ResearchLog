@@ -1,6 +1,9 @@
 Log of DelftFM runs
 
 02/04/24:
+- Job 16385821 (TwinHarbors_test06)
+  - Rewrote analysis script to plotDFMAtm_v2.py and verified it worked for all data (waterdepth at least)
+  - Put back atmospheric forcing to model
 - Job 16385359 (TwinHarbors_test06)
   - Changed .mdu files RefDate to 20231101 (before it was referenced to 20231115)
     - This means changing the TStart and TStop referenced to 20231101 (before it was referenced to 20231115)
@@ -10,6 +13,7 @@ Log of DelftFM runs
       - HisInterval                       = 3600 1209600 1555200
       - MapInterval                       = 3600 1209600 1555200
   - Started at 21:44, cancelled at 22:13 (model run time of 28 minutes)
+  - Worked showing reliable water depth using plotDFMAtm_v2.py!
 - Job 16383865 (TwinHarbors_test06)
   - Made ONLY tides (turned off MET forcing to see if it causes the weird data)
     - Removed MET forcing in "FlowFM_test.ext" file
