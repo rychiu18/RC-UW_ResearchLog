@@ -2,9 +2,17 @@
 Log of weekly research accomplishments
 
 # 2024
-# January 28 - February 03
-- Running DFM model with MET data, tides, and discharge (TwinHarbors_test07)
+# February 04 - February 10
+- Running model for 12/01 - 12/07/23 to see if it still shows weird water level values
+	- I'm assuming it's something weird with the model setup or parameters set?
 
+# January 28 - February 03
+- Still working on fixing DFM model with met data and tides
+	- Weird psychedelic plots were result of assigning fixed indices for plotting for each *_map.nc file and starting the model run at 111523 instead of referenced to beginning of month
+	- BUT still seeing sharp increases in water level/SSH after fixing
+	- MET and pressure field looks good though
+ - Tried Yingzhong's setup for new test.slurm and submit_singularity.sh scripts but did NOT work, so reverted to using old cpu/node configuration
+ 
 ## January 14 - 27
 - Created MakeAtmGrid.py which interpolates rotated LiveOcean data (pressure, uwind, vwind to square grid for 12km resolution
 	- Had few iterations due to creating MET forcing file starting from lower left corner (just like LiveOcean), rather than a normal grid (starting from upper left corner like how DFM reads it even though it specifies the starting LLC coordinate
