@@ -4,7 +4,8 @@ Log of DelftFM runs
 - Job 16404103 (TwinHarbors_test07)
   - Starting on 12/01/23 for 7 days
   - Made tides ONLY to see if we still see weird water levels appear on hour 40
-  - Started run at 23:50, ended at
+  - Started run at 23:50, ended at 02:45 on 02/06/24 (~<3 hours)
+  - Water level data looks good!
 - Job 16397467 (TwinHarbors_test06)
   - 4 day run starting on 11/15/23
   - Running with only tides to compare with tides and met forcing to see if water level anomalies still show after 40 hours
