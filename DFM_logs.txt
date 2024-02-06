@@ -1,5 +1,10 @@
 Log of DelftFM runs
 
+02/06/24:
+- Job 16411872 (TwinHarbors_test07)
+  - Put back in MET forcing files (.amp, .amu, .amv)
+  - Started 12:28, ended 
+
 02/05/24:
 - Job 16404103 (TwinHarbors_test07)
   - Starting on 12/01/23 for 7 days
