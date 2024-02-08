@@ -7,7 +7,20 @@ Log of DelftFM runs
     - Added new discharge.bc files for all discharge points
       - Did not include Satsop b/c further upstream than Montesano
       - Put in new .pli file for Naselle River
-  - Started at 00:36, ended at
+  - Started at 00:36, ended at 08:42 (model run time of ~8 hours)
+  - Output looks good, besides failing bc lack of met forcing (need to adjust final hours to go the length of the model)
+- Job 16463612 (TwinHarbors_test08):
+  - Model run from 11/15/23 - 12/11/23
+  - Testing ONLY tides
+  - Edited time:
+    - TStart = 1209600
+    - TStop = 3542400
+  - Started at 15:34, ended at
+- Job (TwinHarbors_test09):
+  - Model run from 11/15/23 - 12/11/23
+  - Testing tides, met, and discharge
+    - Created new discharge and met files
+  - Started at 
 
 02/07/24:
 - Job 16447890 (TwinHarbors_test08):
@@ -15,8 +28,8 @@ Log of DelftFM runs
     - TStart = 1900800
     - TStop = 3542400
   - Only for tides to see results
-  - Started at 21:59, ended at
-
+  - Started at 21:59, ended at 05:22 on 02/08/24 (model run time of ~7 hours for 18 days)
+  - Output looks good
 
 02/06/24:
 - Job 16411872 (TwinHarbors_test07)
