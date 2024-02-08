@@ -1,5 +1,14 @@
 Log of DelftFM runs
 
+02/07/24:
+- Job 16447890 (TwinHarbors_test08):
+  - Changed run from 11/23/23 - 12/11/23
+    - TStart = 1900800
+    - TStop = 3542400
+  - Only for tides to see results
+  - Started at 21:59, ended at
+
+
 02/06/24:
 - Job 16411872 (TwinHarbors_test07)
   - Put back in MET forcing files (.amp, .amu, .amv)
