@@ -1,5 +1,14 @@
 Log of DelftFM runs
 
+02/08/24:
+- Job 16450929 (TwinHarbors_test09):
+  - Model run from 11/23/23 - 12/11/23
+  - Tides, met, and discharge
+    - Added new discharge.bc files for all discharge points
+      - Did not include Satsop b/c further upstream than Montesano
+      - Put in new .pli file for Naselle River
+  - Started at 00:31, ended at
+
 02/07/24:
 - Job 16447890 (TwinHarbors_test08):
   - Changed run from 11/23/23 - 12/11/23
