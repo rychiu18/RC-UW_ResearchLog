@@ -1,5 +1,12 @@
 Log of DelftFM runs
 
+02/09/24:
+- Job 16484702 (TwinHarbors_test09):
+  - Rerun of previous day's TwinHarbors_test09
+  - Changed start date to 1209600
+  - For tides, met, and discharge
+  - Started at 09:41, ended at
+
 02/08/24:
 - Job 16450943 (TwinHarbors_test09):
   - Model run from 11/23/23 - 12/11/23
@@ -20,7 +27,8 @@ Log of DelftFM runs
   - Model run from 11/15/23 - 12/11/23
   - Testing tides, met, and discharge
     - Created new discharge and met files
-  - Started at 16:03, ended at 
+  - Started at 16:03, ended at 00:08 on 02/09/24
+    - Messed up on start time so had to run model again
 
 02/07/24:
 - Job 16447890 (TwinHarbors_test08):
