@@ -6,6 +6,11 @@ Log of DelftFM runs
   - Tides and MET
   - Started at 22:48, ended at 07:28 on 02/11/24 (model run of ~<9 hours)
     - Failed but probably bc didn't have final met timestamp
+    - ** WARNING: Error while updating meteo/structure forcing at time=   3539100.00000000000
+Dimr [2024-02-11 06:16:22.486231] #0 >> kernel: Error while updating meteo/structure forcing at time=   3539100.00000000000
+** WARNING: ...
+Dimr [2024-02-11 06:16:22.486261] #0 >> kernel: ...
+** WARNING: Updating target failed, quantity='windx', itemId=       2
 - Job 16507859 (TwinHarbors_test08):
   - Running 11/23/23 - 12/11/23
   - Only tides
