@@ -4,11 +4,12 @@ Log of DelftFM runs
 - Job 16507878 (TwinHarbors_test09:
   - Running 11/23/23 - 12/11/23
   - Tides and MET
-  - Started at 22:48
+  - Started at 22:48, ended at 07:28 on 02/11/24 (model run of ~<9 hours)
+    - Failed but probably bc didn't have final met timestamp
 - Job 16507859 (TwinHarbors_test08):
   - Running 11/23/23 - 12/11/23
   - Only tides
-  - Started at 22:35
+  - Started at 22:35, ended at 06:59 on 02/11/24 (model run of ~<9 hours)
 
 02/09/24:
 - Job 16484702 (TwinHarbors_test09):
