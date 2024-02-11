@@ -1,11 +1,23 @@
 Log of DelftFM runs
 
+02/10/24:
+- Job 16507878 (TwinHarbors_test09:
+  - Running 11/23/23 - 12/11/23
+  - Tides and MET
+  - Started at 22:48
+- Job 16507859 (TwinHarbors_test08):
+  - Running 11/23/23 - 12/11/23
+  - Only tides
+  - Started at 22:35
+
 02/09/24:
 - Job 16484702 (TwinHarbors_test09):
   - Rerun of previous day's TwinHarbors_test09
   - Changed start date to 1209600
   - For tides, met, and discharge
-  - Started at 09:41, ended at
+  - Started at 09:41, cancelled bc wanted to run other times instead
+  - Cancelled after 1 day and 12 hours
+  - Had output for 11/15 - 11/18 (20:00)
 
 02/08/24:
 - Job 16450943 (TwinHarbors_test09):
@@ -22,8 +34,9 @@ Log of DelftFM runs
   - Edited time:
     - TStart = 1209600
     - TStop = 3542400
-  - Started at 15:34, ended at
+  - Started at 15:34, ended bc not running fast enough
     - After 2 days and 1 hour, only have partial data from Nov 15 - Nov 19 (13:00)
+    - Cancelled after 2 days and 6 hours bc not running fast enough!
 - Job 16464184 (TwinHarbors_test09):
   - Model run from 11/15/23 - 12/11/23
   - Testing tides, met, and discharge
