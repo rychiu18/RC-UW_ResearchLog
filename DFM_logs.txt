@@ -23,6 +23,7 @@ Log of DelftFM runs
     - TStart = 1209600
     - TStop = 3542400
   - Started at 15:34, ended at
+    - After 2 days and 1 hour, only have partial data from Nov 15 - Nov 19 (13:00)
 - Job 16464184 (TwinHarbors_test09):
   - Model run from 11/15/23 - 12/11/23
   - Testing tides, met, and discharge
