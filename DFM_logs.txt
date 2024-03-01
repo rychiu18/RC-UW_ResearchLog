@@ -5,6 +5,8 @@ Log of DelftFM runs
   - Running 11/23/23 - 12/11/23
   - Tides, MET, and discharge
   - Included Naselle and Satsop (discharging at edge of boundary)
+  - Using Columbia River (at Vancouver) for discharge 
+  - Changed TStop time to 3538800 seconds
 
 
 02/10/24:
