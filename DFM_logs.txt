@@ -1,7 +1,7 @@
 Log of DelftFM runs
 
 02/29/24:
-- Job (TwinHarbors_test09):
+- Job 16784442 (TwinHarbors_test09):
   - Running 11/23/23 - 12/11/23
   - Tides, MET, and discharge
   - Included Naselle and Satsop (discharging at edge of boundary)
