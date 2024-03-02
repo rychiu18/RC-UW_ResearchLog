@@ -1,5 +1,14 @@
 Log of DelftFM runs
 
+03/01/24:
+- Job 16796249 (TwinHarbors_test10):
+  - Running 11/23/23 - 11/25/23 (2 days for testing)
+  - Tides, MET, discharge (w/Satsop), and waves
+  - Created new Waves.bcw file with new CDIP data
+  - Added back Waves block in "dimr_config_parallel.xml" file
+  - Changed TStop time to 2073600
+  - Switched on WAVE parameter to 3 (SWAN) in .mdu file
+
 02/29/24:
 - Job 16784442 (TwinHarbors_test09):
   - Running 11/23/23 - 12/11/23
