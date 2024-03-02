@@ -1,5 +1,11 @@
 Log of DelftFM runs
 
+03/02/24:
+- Job 16798212 (TwinHarbors_test10):
+  - Running 11/23/23 - 12/12/23
+  - Tides, MET, discharge (w/Satsop), and waves
+  - Changed TStop back to 3538800 seconds
+
 03/01/24:
 - Job 16796280 (TwinHarbors_test10):
   - Running 11/23/23 - 11/25/23 (2 days for testing)
