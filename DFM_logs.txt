@@ -9,7 +9,8 @@ Log of DelftFM runs
   - Changed TStop time to 2073600
   - Switched on WAVE parameter to 3 (SWAN) in .mdu file
   - Change Waves.mdw file
-    - Changed ReferenceDate
+    - Changed ReferenceDate to 11-01-2023
+  - Took 3:30 to complete successfully
 
 02/29/24:
 - Job 16784442 (TwinHarbors_test09):
