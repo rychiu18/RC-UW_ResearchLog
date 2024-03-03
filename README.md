@@ -2,6 +2,15 @@
 Log of weekly research accomplishments
 
 # 2024
+
+# February 11 - March 02
+- Ran model from 11/23 - 12/12/2023 for tide only, tide+MET, and tide+MET+discharge and generated OSM outputs
+	- Included extra river discharge (Satsop/Naselle)
+ - Ran tide+MET+discharge (w/Satsop prescribed at Montesano) but showed lower water levels
+- Running model from 11/23 - 12/12/2023 for tide+MET+discharge+waves
+	- Using same method for wave forcing as Stantec
+ 		- Forced using CDIP 036 buoy time series
+
 # February 04 - February 10
 - Running model for 12/01 - 12/07/23 to see if it still shows weird water level values
 	- I'm assuming it's something weird with the model setup or parameters set?
