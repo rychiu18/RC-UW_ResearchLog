@@ -1,5 +1,13 @@
 Log of DelftFM runs
 
+03/04/24:
+- Job 16840900 (TwinHarbors_test09):
+  - Running 11/23/23 - 12/12/23
+  - Tides, MET, discharge (w/o Satsop)
+  - Removed Satsop from FlowFM_bnd_test.ext
+  - Running to test if Satsop plays an influence
+    - Newer model with Satsop suggests a decrease in water levels
+
 03/02/24:
 - Job 16798212 (TwinHarbors_test10):
   - Running 11/23/23 - 12/12/23
