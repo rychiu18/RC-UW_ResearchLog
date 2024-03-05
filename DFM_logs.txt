@@ -7,6 +7,8 @@ Log of DelftFM runs
   - Removed Satsop from FlowFM_bnd_test.ext
   - Running to test if Satsop plays an influence
     - Newer model with Satsop suggests a decrease in water levels
+  - Results: Job16450943 did ~20cm better than this run even that job also did not include Satsop
+    - Also did better at matching water levels than Job16784442 even though that run had Satsop included
 
 03/02/24:
 - Job 16798212 (TwinHarbors_test10):
@@ -69,6 +71,7 @@ Dimr [2024-02-11 06:16:22.486261] #0 >> kernel: ...
       - Put in new .pli file for Naselle River
   - Started at 00:36, ended at 08:42 (model run time of ~8 hours)
   - Output looks good, besides failing bc lack of met forcing (need to adjust final hours to go the length of the model)
+
 - Job 16463612 (TwinHarbors_test08):
   - Model run from 11/15/23 - 12/11/23
   - Testing ONLY tides
