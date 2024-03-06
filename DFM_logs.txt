@@ -9,7 +9,6 @@ Log of DelftFM runs
     - Changed on test.slurm (changed name and changed mem from 350 to 100G)
     - Changed on submit_singularity.sh
 
-
 03/04/24:
 - Job 16840900 (TwinHarbors_test09):
   - Running 11/23/23 - 12/12/23
@@ -46,11 +45,10 @@ Log of DelftFM runs
   - Using Columbia River (at Vancouver) for discharge 
   - Changed TStop time to 3538800 seconds
 
-
 02/10/24:
 - Job 16507878 (TwinHarbors_test09):
   - Running 11/23/23 - 12/11/23
-  - Tides and MET
+  - Tides and MET (USED NEW 'ncep_202311_202312*' files from now on)
   - Started at 22:48, ended at 07:28 on 02/11/24 (model run of ~<9 hours)
     - Failed but probably bc didn't have final met timestamp
     - ** WARNING: Error while updating meteo/structure forcing at time=   3539100.00000000000
@@ -81,6 +79,7 @@ Dimr [2024-02-11 06:16:22.486261] #0 >> kernel: ...
       - Put in new .pli file for Naselle River
   - Started at 00:36, ended at 08:42 (model run time of ~8 hours)
   - Output looks good, besides failing bc lack of met forcing (need to adjust final hours to go the length of the model)
+  - Using old ncep_202311_to_202312* MET forcing files
 
 - Job 16463612 (TwinHarbors_test08):
   - Model run from 11/15/23 - 12/11/23
