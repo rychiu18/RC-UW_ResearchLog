@@ -1,10 +1,14 @@
 Log of DelftFM runs
 
 03/05/24:
-- Job 16869469 (TwinHarbors_test09):
+- Job 16869483 (TwinHarbors_test09):
   - Running 11/23/23 - 12/12/23
   - Tides, MET, discharge (merged Satsop and Chehalis into "chehalis_merged"
   - Edited FlowFM_bnd_test.ext to remove Satsop and Chehalis and include chehalis_merged for discharge forcing
+  - Changed partition to run on compute b/c computer-bigmem was taken
+    - Changed on test.slurm (changed name and changed mem from 350 to 100G)
+    - Changed on submit_singularity.sh
+
 
 03/04/24:
 - Job 16840900 (TwinHarbors_test09):
