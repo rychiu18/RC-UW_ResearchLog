@@ -1,10 +1,17 @@
 Log of DelftFM runs
 
+03/08/24:
+- Job 16936008 (TwinHarbors_test10):
+  - Running 11/23/23 - 12/12/23
+  - Tides, MET, discharge (using "chehalis_merged" for Satsop+Porter)
+  - Edited FlowFM_bnd_test.ext to remove Satsop and Chehalis and include chehalis_merged for discharge forcing)
+  - Set max model run time to be 81 hours
+
 03/05/24:
 - Job 16869483 (TwinHarbors_test09):
   - Running 11/23/23 - 12/12/23
   - Tides, MET, discharge (merged Satsop and Chehalis into "chehalis_merged"
-  - Edited FlowFM_bnd_test.ext to remove Satsop and Chehalis and include chehalis_merged for discharge forcing
+  - Edited FlowFM_bnd_test.ext to remove Satsop and Chehalis and include chehalis_merged for discharge forcing)
   - Changed partition to run on compute b/c computer-bigmem was taken
     - Changed on test.slurm (changed name and changed mem from 350 to 100G)
     - Changed on submit_singularity.sh
