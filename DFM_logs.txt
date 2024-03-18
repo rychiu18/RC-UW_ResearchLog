@@ -6,6 +6,7 @@ Log of DelftFM runs
   - Tides, MET, discharge (using "chehalis_merged" for Satsop+Porter)
   - Edited FlowFM_bnd_test.ext to remove Satsop and Chehalis and include chehalis_merged for discharge forcing)
   - Set max model run time to be 81 hours (ran from 11/23/23 - 12/09/23 1900)
+    - 403 hours of output out of 456 hours (roughly 1 hours of run time generates 5 hours of output)
 
 03/05/24:
 - Job 16869483 (TwinHarbors_test09):
