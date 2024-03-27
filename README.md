@@ -1,8 +1,103 @@
 # RC-UW_ResearchLog
 Log of weekly research accomplishments
 
+# 2024
+
+## March 24 - March 30
+- Look at Stantec model datum and compare with new model
+	- In Stantec report, Toke point and Westport are referenced to MLLW
+	- Westport NAVD88 = +1.12 ft
+		- Mean ∆SSH in full DFM model is ~1.32m
+    		- https://tidesandcurrents.noaa.gov/datums.html?id=9441102
+	- Toke point NAVD88 = +0.82 ft
+   		- Mean ∆SSH in full DFM model is ~1.38 m
+- Depth at points nearest to observation points based on bathymetry file (*tw_v60m*)
+	- Westport: -5.8507181825396275m
+	- Montesano: -5.0m
+	- Toke point: -1.4809497578709583
+ - Ran DFM model (TwinHarbors_test11) with no forcing
+	- Westport: SSH=0, waterdepth = 6.12327292m
+	- Toke point: SSH=0, waterdepth = 1.42673181m
+	- Montesano: SSH=0, waterdepth = 5m
+ - Ran original model from Stantec to look at results at each observation station
+ - Ran TwinHarbors_test10 with tides, merged discharge (Satsop+Porter), waves (no MET)
+
+## March 03 - March 23
+- Looked up datum references for USGS/NOAA gauges (Westport, Montesano, Tokepoint)
+	- All are referenced to NAVD88
+		- https://tidesandcurrents.noaa.gov/waterlevels.html?id=9440910 (Toke Point)
+		- https://tidesandcurrents.noaa.gov/waterlevels.html?id=9441102 (Westport)
+		- https://waterdata.usgs.gov/monitoring-location/12035100/#parameterCode=00065&period=P7D&showMedian=false (Montesano)
+			- https://waterdata.usgs.gov/nwis/inventory?site_no=12035100&agency_cd=USGS (Montesano)
+- Bathymetry in "*tw_60m" file in DFM shows -5m constant bathymetry upstream from Hoquiam
+- DFM wave model output:
+	- Toke point model output has small water depth difference to observed (-0.04672478723m)
+	- Westport and Montesano have large (>1m) ∆SSH difference
+		- Ignore Montesano bc of bathymetry overestimation
+	- Westport and Toke point have mean ∆SSH ~1.3m difference
+
+To do:
+- Run original stantec model to compare results
+- Run models incrementally backwards removing certain forcings
+- Check difference between MSL/MLW at Westport and Tokepoint
+- Start research log and share
+
+## February 11 - March 02
+- Ran model from 11/23 - 12/12/2023 for tide only, tide+MET, and tide+MET+discharge and generated OSM outputs
+	- Included extra river discharge (Satsop/Naselle)
+ - Ran tide+MET+discharge (w/Satsop prescribed at Montesano) but showed lower water levels
+- Running model from 11/23 - 12/12/2023 for tide+MET+discharge+waves
+	- Using same method for wave forcing as Stantec
+ 		- Forced using CDIP 036 buoy time series
+
+## February 04 - February 10
+- Running model for 12/01 - 12/07/23 to see if it still shows weird water level values
+	- I'm assuming it's something weird with the model setup or parameters set?
+
+## January 28 - February 03
+- Still working on fixing DFM model with met data and tides
+	- Weird psychedelic plots were result of assigning fixed indices for plotting for each *_map.nc file and starting the model run at 111523 instead of referenced to beginning of month
+	- BUT still seeing sharp increases in water level/SSH after fixing
+	- MET and pressure field looks good though
+ - Tried Yingzhong's setup for new test.slurm and submit_singularity.sh scripts but did NOT work, so reverted to using old cpu/node configuration
+ 
+## January 14 - 27
+- Created MakeAtmGrid.py which interpolates rotated LiveOcean data (pressure, uwind, vwind to square grid for 12km resolution
+	- Had few iterations due to creating MET forcing file starting from lower left corner (just like LiveOcean), rather than a normal grid (starting from upper left corner like how DFM reads it even though it specifies the starting LLC coordinate
+- Ran DFM (TwinHarbors_test05) with just MET data and results aren't too off (<O(1))
+- Running DFM model with MET data and tides only to look at results (TwinHarbors_test06)
+
+## January 07 - January 13
+- Ran new DFM model with only tides (previous run had tide forcings removed, but added back in)
+- Created MakeDischarge.py script to take USGS discharge and output new file to make readable for DFM
+- Created MakeAtmGrid.py to try to merge and isolate wind and pressure data from LiveOcean
+- Created TwinHarbors_05 to run ONLY atmospheric data for testing
+
+# 2023
+## December 24 - January 06
+- Retrieved GFS data from LiveOcean server (Parker) and transferred onto Google Drive
+- Ran model for December 2023 storm with only tides (~10m run)
+- Started creating data analysis scripts for December storms
+
+## December 17 - December 23
+- Looked at tide model and compared with previous model with all forcings
+- Ran new model for December 2023 storm - TwinHarbors_test03
+
+## December 10 - December 16
+- Laid out OSM poster roadmap
+	- Run different models (tides, tides+Q, tides+SS, tides+Q+SS) for December storm event
+- Ran 1999 model with just tides (or tried to) - TwinHarbors_test02
+- Think about different reanalysis products for wind and atm. pressure forcing for atmospheric forcing in the model with higher resolution than CFSR (Stantec uses) which is ~38km
+- Registered for OSM 2024
+
 ## December 03 - December 09
 - Collected results of week's atmospheric river event
+![12/02-12/10 Storm Event (Precip, APress, WSpd, Water Level)](Figures/Dec23_01.png)
+Figure 1: 12/02-12/10 Storm Event (Precip, APress, WSpd, Water Level)
+
+
+![12/02-12/10 Storm Event (H_s, T_s, SDir)](Figures/Dec23_02.png)
+Figure 2: 12/02-12/10 Storm Event (H_s, T_s, SDir)
 
 ## November 26 - December 02
 - Ran DFM model: 15466558:
