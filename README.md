@@ -3,6 +3,9 @@ Log of weekly research accomplishments
 
 # 2024
 
+## March 24 - March 30
+
+
 ## March 03 - March 23
 - Looked up datum references for USGS/NOAA gauges (Westport, Montesano, Tokepoint)
 	- All are referenced to NAVD88
@@ -15,7 +18,18 @@ Log of weekly research accomplishments
 	- Toke point model output has small water depth difference to observed (-0.04672478723m)
 	- Westport and Montesano have large (>1m) ∆SSH difference
 		- Ignore Montesano bc of bathymetry overestimation
-	- Westport and Toke point have mean ∆SSH ~1.3m difference 
+	- Westport and Toke point have mean ∆SSH ~1.3m difference
+To do:
+- Run original stantec model to compare results
+- Run models incrementally backwards removing certain forcings
+- Check difference between MSL/MLW at Westport and Tokepoint
+- Stantec report shows datum for observation stations (Toke point and Westport) are referenced to MLLW
+	- Westport NAVD88 = +1.12 ft
+		- Mean ∆SSH in full DFM model is ~1.32m
+    		- https://tidesandcurrents.noaa.gov/datums.html?id=9441102
+	- Toke point NAVD88 = +0.82 ft
+   		- Mean ∆SSH in full DFM model is ~1.38 m
+- Start research log and share
 
 ## February 11 - March 02
 - Ran model from 11/23 - 12/12/2023 for tide only, tide+MET, and tide+MET+discharge and generated OSM outputs
