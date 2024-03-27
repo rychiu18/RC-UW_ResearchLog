@@ -11,6 +11,14 @@ Log of weekly research accomplishments
     		- https://tidesandcurrents.noaa.gov/datums.html?id=9441102
 	- Toke point NAVD88 = +0.82 ft
    		- Mean ∆SSH in full DFM model is ~1.38 m
+- Depth at points nearest to observation points based on bathymetry file (*tw_v60m*)
+	- Westport: -5.8507181825396275m
+	- Montesano: -5.0m
+	- Toke point: -1.4809497578709583
+ - Ran DFM model (TwinHarbors_test11) with no forcing
+	- Westport: SSH=0, waterdepth = 6.12327292m
+	- Toke point: SSH=0, waterdepth = 1.42673181m
+	- Montesano: SSH=0, waterdepth = 5m
 
 ## March 03 - March 23
 - Looked up datum references for USGS/NOAA gauges (Westport, Montesano, Tokepoint)
