@@ -5,6 +5,9 @@ Log of DelftFM runs
   - Run without any forcings to see how water level/SSH changes over time
   - Changed to 2 days starting from 11/23
   - Removed waves block from dimr_config_parallel.xml file
+  - Worked
+    - At Toke point, shows SSH=0 and waterdepth=1.42673181 (constant)
+    - At Westport, shows SSH=0 and waterdepth=6.12327292 (constant)
 
 
 03/08/24:
