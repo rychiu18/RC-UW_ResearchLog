@@ -4,7 +4,13 @@ Log of weekly research accomplishments
 # 2024
 
 ## March 24 - March 30
-
+- Look at Stantec model datum and compare with new model
+	- In Stantec report, Toke point and Westport are referenced to MLLW
+	- Westport NAVD88 = +1.12 ft
+		- Mean ∆SSH in full DFM model is ~1.32m
+    		- https://tidesandcurrents.noaa.gov/datums.html?id=9441102
+	- Toke point NAVD88 = +0.82 ft
+   		- Mean ∆SSH in full DFM model is ~1.38 m
 
 ## March 03 - March 23
 - Looked up datum references for USGS/NOAA gauges (Westport, Montesano, Tokepoint)
@@ -24,12 +30,6 @@ To do:
 - Run original stantec model to compare results
 - Run models incrementally backwards removing certain forcings
 - Check difference between MSL/MLW at Westport and Tokepoint
-- Stantec report shows datum for observation stations (Toke point and Westport) are referenced to MLLW
-	- Westport NAVD88 = +1.12 ft
-		- Mean ∆SSH in full DFM model is ~1.32m
-    		- https://tidesandcurrents.noaa.gov/datums.html?id=9441102
-	- Toke point NAVD88 = +0.82 ft
-   		- Mean ∆SSH in full DFM model is ~1.38 m
 - Start research log and share
 
 ## February 11 - March 02
