@@ -1,6 +1,9 @@
 Log of DelftFM runs
 
 03/27/24:
+- Job 17418535 (TwinHarbors_test01):
+  - Rerun original model to see if water levels and SSH are accurate
+
 - Job 17417435 (TwinHarbors_test11):
   - Run without any forcings to see how water level/SSH changes over time
   - Changed to 2 days starting from 11/23
@@ -8,7 +11,6 @@ Log of DelftFM runs
   - Worked
     - At Toke point, shows SSH=0 and waterdepth=1.42673181 (constant)
     - At Westport, shows SSH=0 and waterdepth=6.12327292 (constant)
-
 
 03/08/24:
 - Job 16936008 (TwinHarbors_test10):
