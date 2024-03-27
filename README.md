@@ -19,6 +19,7 @@ Log of weekly research accomplishments
 	- Westport and Montesano have large (>1m) ∆SSH difference
 		- Ignore Montesano bc of bathymetry overestimation
 	- Westport and Toke point have mean ∆SSH ~1.3m difference
+
 To do:
 - Run original stantec model to compare results
 - Run models incrementally backwards removing certain forcings
