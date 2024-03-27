@@ -1,14 +1,18 @@
 Log of DelftFM runs
 
 03/27/24:
-- Job 17418535 (TwinHarbors_test01):
+- Job 17419215 (TwinHarbors_test10):
+  - Contains tides, MET, discharge (w/merged Satsop and Porter), waves
+  - Remove MET forcing to compare results
+    - Removed "FlowFM_test.ext" from ExtForceFile parameter in FlowFM.mdu file
+  - Used "compute" partition, changed memory (mem=100G), changed time (time=48:00:00)
+- Job 17418679 (TwinHarbors_test01):
   - Rerun original model to see if water levels and SSH are accurate
-
 - Job 17417435 (TwinHarbors_test11):
   - Run without any forcings to see how water level/SSH changes over time
   - Changed to 2 days starting from 11/23
   - Removed waves block from dimr_config_parallel.xml file
-  - Worked
+  - Results
     - At Toke point, shows SSH=0 and waterdepth=1.42673181 (constant)
     - At Westport, shows SSH=0 and waterdepth=6.12327292 (constant)
 
