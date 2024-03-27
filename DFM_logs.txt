@@ -1,10 +1,10 @@
 Log of DelftFM runs
 
 03/27/24:
-- Job 17417131 (TwinHarbors_test11):
+- Job 17417435 (TwinHarbors_test11):
   - Run without any forcings to see how water level/SSH changes over time
   - Changed to 2 days starting from 11/23
-  - Removed waves block from dimr_config_parallele.xml file
+  - Removed waves block from dimr_config_parallel.xml file
 
 
 03/08/24:
