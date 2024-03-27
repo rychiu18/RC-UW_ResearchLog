@@ -1,5 +1,11 @@
 Log of DelftFM runs
 
+03/27/24:
+- Job 17417131 (TwinHarbors_test11):
+  - Run without any forcings to see how water level/SSH changes over time
+  - Changed to 2 days starting from 11/23
+
+
 03/08/24:
 - Job 16936008 (TwinHarbors_test10):
   - Running 11/23/23 - 12/12/23
