@@ -19,7 +19,8 @@ Log of weekly research accomplishments
 	- Westport: SSH=0, waterdepth = 6.12327292m
 	- Toke point: SSH=0, waterdepth = 1.42673181m
 	- Montesano: SSH=0, waterdepth = 5m
- - Run original model from Stantec to look at results at each observation station
+ - Ran original model from Stantec to look at results at each observation station
+ - Ran TwinHarbors_test10 with tides, merged discharge (Satsop+Porter), waves (no MET)
 
 ## March 03 - March 23
 - Looked up datum references for USGS/NOAA gauges (Westport, Montesano, Tokepoint)
