@@ -3,7 +3,21 @@ Log of weekly research accomplishments
 
 # 2024
 
-# February 11 - March 02
+## March 03 - March 23
+- Looked up datum references for USGS/NOAA gauges (Westport, Montesano, Tokepoint)
+	- All are referenced to NAVD88
+		- https://tidesandcurrents.noaa.gov/waterlevels.html?id=9440910 (Toke Point)
+		- https://tidesandcurrents.noaa.gov/waterlevels.html?id=9441102 (Westport)
+		- https://waterdata.usgs.gov/monitoring-location/12035100/#parameterCode=00065&period=P7D&showMedian=false (Montesano)
+			- https://waterdata.usgs.gov/nwis/inventory?site_no=12035100&agency_cd=USGS (Montesano)
+- Bathymetry in "*tw_60m" file in DFM shows -5m constant bathymetry upstream from Hoquiam
+- DFM wave model output:
+	- Toke point model output has small water depth difference to observed (-0.04672478723m)
+	- Westport and Montesano have large (>1m) ∆SSH difference
+		- Ignore Montesano bc of bathymetry overestimation
+	- Westport and Toke point have mean ∆SSH ~1.3m difference 
+
+## February 11 - March 02
 - Ran model from 11/23 - 12/12/2023 for tide only, tide+MET, and tide+MET+discharge and generated OSM outputs
 	- Included extra river discharge (Satsop/Naselle)
  - Ran tide+MET+discharge (w/Satsop prescribed at Montesano) but showed lower water levels
@@ -11,11 +25,11 @@ Log of weekly research accomplishments
 	- Using same method for wave forcing as Stantec
  		- Forced using CDIP 036 buoy time series
 
-# February 04 - February 10
+## February 04 - February 10
 - Running model for 12/01 - 12/07/23 to see if it still shows weird water level values
 	- I'm assuming it's something weird with the model setup or parameters set?
 
-# January 28 - February 03
+## January 28 - February 03
 - Still working on fixing DFM model with met data and tides
 	- Weird psychedelic plots were result of assigning fixed indices for plotting for each *_map.nc file and starting the model run at 111523 instead of referenced to beginning of month
 	- BUT still seeing sharp increases in water level/SSH after fixing
