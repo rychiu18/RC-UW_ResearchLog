@@ -1,5 +1,13 @@
 Log of DelftFM runs
 
+03/28/24:
+- Job 17433700 (TwinHarbors_test10):
+  - Changed TStop to 3628800 (20 days after TStart)
+- Job 17433652 (TwinHarbors_test01):
+  - Running original model again bc it failed after 9 days
+  - Changed MapInterval to match HisInterval
+
+
 03/27/24:
 - Job 17419215 (TwinHarbors_test10):
   - Contains tides, discharge (w/merged Satsop and Porter), waves
@@ -8,6 +16,9 @@ Log of DelftFM runs
   - Used "compute" partition, changed memory (mem=100G), changed time (time=48:00:00)
   - Failed:
     - Only ran for ~13 hours, completed only ~10 days of modeling
+    - "forrtl: Disk quota exceeded
+forrtl: severe (38): error during write, unit -4883, file /mnt/data/rchiu18/TwinHarbors_test10/wave/BOTNOW"
+    - Assumed that memory exceeded?
 - Job 17418679 (TwinHarbors_test01):
   - Rerun original model to see if water levels and SSH are accurate
   - Failed:
