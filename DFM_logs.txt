@@ -2,12 +2,16 @@ Log of DelftFM runs
 
 03/27/24:
 - Job 17419215 (TwinHarbors_test10):
-  - Contains tides, MET, discharge (w/merged Satsop and Porter), waves
+  - Contains tides, discharge (w/merged Satsop and Porter), waves
   - Remove MET forcing to compare results
     - Removed "FlowFM_test.ext" from ExtForceFile parameter in FlowFM.mdu file
   - Used "compute" partition, changed memory (mem=100G), changed time (time=48:00:00)
+  - Failed:
+    - Only ran for ~13 hours, completed only ~10 days of modeling
 - Job 17418679 (TwinHarbors_test01):
   - Rerun original model to see if water levels and SSH are accurate
+  - Failed:
+    - Only ran for ~13 hours, completed only ~9 days of modeling
 - Job 17417435 (TwinHarbors_test11):
   - Run without any forcings to see how water level/SSH changes over time
   - Changed to 2 days starting from 11/23
