@@ -4,12 +4,18 @@ Log of DelftFM runs
 - Job 17447940 (TwinHarbors_test12):
   - Contains tides, waves
   - Removed discharge from FlowFM_bnd_test.ext
+  - FAILED:
+    - Ran for ~11 hours only
 - Job 17447956 (TwinHarbors_test10):
   - Contains tides, discharge (w/merged Satsop and Porter), waves
   - Running again after changing mem to 300G to see if it fixes disk quota exceeded error
+  - FAILED:
+    - Ran for ~11 hours only
 - Job 17447953 (TwinHarbors_test01):
   - Running original model again bc it failed with disk quota exceeded (changed mem to 300G to see if it fixes)
   - Using the new (Yingzhong's) test.slurm and submit file to let it run at the same time as another model run (QSFP limit)
+  - FAILED:
+    - Ran for ~11 hours only
 
 03/28/24:
 - Job 17433700 (TwinHarbors_test10):
