@@ -1,5 +1,9 @@
 Log of DelftFM runs
 
+03/30/24:
+- Job 17451275 (TwinHarbors_test01):
+  - Running original model again without any other models to see if it fixes the disk quota exceeded crash
+
 03/29/24:
 *Disk quota exceeded is because max storage in user account is 200G!!!
 - Job 17447940 (TwinHarbors_test12):
