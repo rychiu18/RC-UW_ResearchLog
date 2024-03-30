@@ -1,11 +1,29 @@
 Log of DelftFM runs
 
+03/29/24:
+- Job 17447940 (TwinHarbors_test12):
+  - Contains tides, waves
+  - Removed discharge from FlowFM_bnd_test.ext
+- Job 17447956 (TwinHarbors_test10):
+  - Contains tides, discharge (w/merged Satsop and Porter), waves
+  - Running again after changing mem to 300G to see if it fixes disk quota exceeded error
+- Job 17447953 (TwinHarbors_test01):
+  - Running original model again bc it failed with disk quota exceeded (changed mem to 300G to see if it fixes)
+  - Using the new (Yingzhong's) test.slurm and submit file to let it run at the same time as another model run (QSFP limit)
+
 03/28/24:
 - Job 17433700 (TwinHarbors_test10):
+  - Contains tides, discharge (w/merged Satsop and Porter), waves
   - Changed TStop to 3628800 (20 days after TStart)
+  - Failed after 20 hours of runtime
+    - Able to model ~11 days
+    - Disk quota exceeded (mem was set to 100G, compute partition, so maybe changing that could fix it?)
 - Job 17433652 (TwinHarbors_test01):
   - Running original model again bc it failed after 9 days
   - Changed MapInterval to match HisInterval
+  - Failed after 20 hours of runtime
+    - Able to model ~8 days
+    - Disk quota exceeded (mem was set to 200G, maybe changing could fix it?)
 
 
 03/27/24:
