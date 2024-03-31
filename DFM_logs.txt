@@ -1,6 +1,9 @@
 Log of DelftFM runs
 
 03/30/24:
+- Job 17452285 (TwinHarbors_test12):
+  - Contains tides, waves
+  - Running again to see if disk quota exceeded error is fixed after clearing space in folder
 - Job 17451275 (TwinHarbors_test01):
   - Running original model again without any other models to see if it fixes the disk quota exceeded crash
 
