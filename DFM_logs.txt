@@ -4,6 +4,16 @@ Log of DelftFM runs
 - Job 17452285 (TwinHarbors_test12):
   - Contains tides, waves
   - Running again to see if disk quota exceeded error is fixed after clearing space in folder
+  - FAILED:
+    - Ran for ~1d6hrs for ~11 modeled days
+    - Disk quota exceeded
+    - *** WARNING: unable to run SWAN using "swan.sh". Trying with "swan.bat" ...
+sh: swan.bat: command not found
+>>...End of SWAN run
+*** ERROR: file 'norm_end' expected to signal a correct SWAN calculation
+ ERROR: *** ERROR: file 'norm_end' expected to signal a correct SWAN calculation
+ Wave exited abnormally
+
 - Job 17451275 (TwinHarbors_test01):
   - Running original model again without any other models to see if it fixes the disk quota exceeded crash
 
