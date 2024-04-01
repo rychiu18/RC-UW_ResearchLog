@@ -1,13 +1,72 @@
 Log of DelftFM runs
 
+03/30/24:
+- Job 17452285 (TwinHarbors_test12):
+  - Contains tides, waves
+  - Running again to see if disk quota exceeded error is fixed after clearing space in folder
+  - FAILED:
+    - Ran for ~1d6hrs for ~11 modeled days
+    - Disk quota exceeded
+    - *** WARNING: unable to run SWAN using "swan.sh". Trying with "swan.bat" ...
+sh: swan.bat: command not found
+>>...End of SWAN run
+*** ERROR: file 'norm_end' expected to signal a correct SWAN calculation
+ ERROR: *** ERROR: file 'norm_end' expected to signal a correct SWAN calculation
+ Wave exited abnormally
+
+- Job 17451275 (TwinHarbors_test01):
+  - Running original model again without any other models to see if it fixes the disk quota exceeded crash
+  - FAILED:
+    - Ran for ~1d6hrs for ~10 modeled days
+
+03/29/24:
+*Disk quota exceeded is because max storage in user account is 200G!!!
+- Job 17447940 (TwinHarbors_test12):
+  - Contains tides, waves
+  - Removed discharge from FlowFM_bnd_test.ext
+  - FAILED:
+    - Ran for ~11 hours only
+- Job 17447956 (TwinHarbors_test10):
+  - Contains tides, discharge (w/merged Satsop and Porter), waves
+  - Running again after changing mem to 300G to see if it fixes disk quota exceeded error
+  - FAILED:
+    - Ran for ~11 hours only
+- Job 17447953 (TwinHarbors_test01):
+  - Running original model again bc it failed with disk quota exceeded (changed mem to 300G to see if it fixes)
+  - Using the new (Yingzhong's) test.slurm and submit file to let it run at the same time as another model run (QSFP limit)
+  - FAILED:
+    - Ran for ~11 hours only
+
+03/28/24:
+- Job 17433700 (TwinHarbors_test10):
+  - Contains tides, discharge (w/merged Satsop and Porter), waves
+  - Changed TStop to 3628800 (20 days after TStart)
+  - Failed after 20 hours of runtime
+    - Able to model ~11 days
+    - Disk quota exceeded (mem was set to 100G, compute partition, so maybe changing that could fix it?)
+- Job 17433652 (TwinHarbors_test01):
+  - Running original model again bc it failed after 9 days
+  - Changed MapInterval to match HisInterval
+  - Failed after 20 hours of runtime
+    - Able to model ~8 days
+    - Disk quota exceeded (mem was set to 200G, maybe changing could fix it?)
+
+
 03/27/24:
 - Job 17419215 (TwinHarbors_test10):
-  - Contains tides, MET, discharge (w/merged Satsop and Porter), waves
+  - Contains tides, discharge (w/merged Satsop and Porter), waves
   - Remove MET forcing to compare results
     - Removed "FlowFM_test.ext" from ExtForceFile parameter in FlowFM.mdu file
   - Used "compute" partition, changed memory (mem=100G), changed time (time=48:00:00)
+  - Failed:
+    - Only ran for ~13 hours, completed only ~10 days of modeling
+    - "forrtl: Disk quota exceeded
+forrtl: severe (38): error during write, unit -4883, file /mnt/data/rchiu18/TwinHarbors_test10/wave/BOTNOW"
+    - Assumed that memory exceeded?
 - Job 17418679 (TwinHarbors_test01):
   - Rerun original model to see if water levels and SSH are accurate
+  - Failed:
+    - Only ran for ~13 hours, completed only ~9 days of modeling
 - Job 17417435 (TwinHarbors_test11):
   - Run without any forcings to see how water level/SSH changes over time
   - Changed to 2 days starting from 11/23
