@@ -16,6 +16,8 @@ sh: swan.bat: command not found
 
 - Job 17451275 (TwinHarbors_test01):
   - Running original model again without any other models to see if it fixes the disk quota exceeded crash
+  - FAILED:
+    - Ran for ~1d6hrs for ~ modeled days
 
 03/29/24:
 *Disk quota exceeded is because max storage in user account is 200G!!!
