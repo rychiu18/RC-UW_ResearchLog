@@ -6,12 +6,12 @@ Log of DelftFM runs
   - Extended start time in FlowFM.mdu file to begin on November 15, 2023
     - TStart = 1209600 # new
       - TStart = 1900800 (previous)
-  - Not working, stuck on solving for Nov 15, 2023
+  - FAILED: Stuck on solving for Nov 15, 2023
     - Map and HisInterval start times were same as end time (source of error)
 - Job 17530123 (TwinHarbors_test01):
   - Original Stantec model (T+M+D+W)
   - Rerun b/c previous ones failed with quota disk exceeded error
-
+  - FAILED: disk quota exceeded error after 3 days 7 hours
 
 03/30/24:
 - Job 17452285 (TwinHarbors_test12):
