@@ -1,9 +1,15 @@
 Log of DelftFM runs
 
+04/15/24:
+- Job 17709157 (TwinHarbors_test10):
+  - Contains tides, discharge (merged)
+  - Testing without MET now to see if that is the cause of the exploding water levels
+
 04/14/24:
 - Job 17705500 (TwinHarbors_test10):
   - Contains tides, MET, discharge (merged)
   - Testing without WAVES to see if that is the cause of the exploding water levels
+    - Water levels still exploded
 
 04/11/24:
 - Job 17636131 (TwinHarbors_test10):
