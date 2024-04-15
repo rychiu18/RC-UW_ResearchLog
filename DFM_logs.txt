@@ -4,6 +4,7 @@ Log of DelftFM runs
 - Job 17636131 (TwinHarbors_test10):
   - Contains tides, MET, discharge (merged), and waves
   - Changed start date to 11-15-2023
+  - Failed, water levels explode after a day or two
 
 04/05/24:
 - Job 17530095 (TwinHarbors_test12):
