@@ -1,11 +1,19 @@
 Log of DelftFM runs
 
-
-
 04/15/24:
+- Job 17718580 (TwinHarbors_test10):
+  - Contains just tides
+  - Using FlowFM_bnd_test_tides.ext without discharge to test
+- Job 17717960 (TwinHarbors_test10):
+  - Contains tides
+  - Testing without any other forcings to see if they're the cause of exploding water levels
+  - Removed FlowFM_bnd_test.ext file from .mdu file
+  - FAILED: forgot tides are in FlowFM_bnd_test.ext
 - Job 17709157 (TwinHarbors_test10):
   - Contains tides, discharge (merged)
+  - Removed FlowFM_test.ext file from .mdu file
   - Testing without MET now to see if that is the cause of the exploding water levels
+  - FAILED: water levels still exploded with just tides and discharge
 
 04/14/24:
 - Job 17705500 (TwinHarbors_test10):
