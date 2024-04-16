@@ -1,6 +1,10 @@
 Log of DelftFM runs
 
 04/15/24:
+- Job 17729364 (TwinHarbors_test10):
+  - Contains just tides
+  - Changing start date from Nov 18 to see if it will work
+  - TStart = 1468800
 - Job 17718580 (TwinHarbors_test10):
   - Contains just tides
   - Using FlowFM_bnd_test_tides.ext without discharge to test
