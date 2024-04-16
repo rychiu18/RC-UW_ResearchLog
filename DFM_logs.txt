@@ -1,10 +1,17 @@
 Log of DelftFM runs
 
+04/16/24:
+- Job 17738195 (TwinHarbors_test10):
+  - Contains just tides
+  - Changing start date from November 13 to see if it will work
+  - TStart, HisInterval, MapInterval = 1036800
+
 04/15/24:
 - Job 17729364 (TwinHarbors_test10):
   - Contains just tides
   - Changing start date from Nov 18 to see if it will work
   - TStart = 1468800
+  - WORKED: water levels at Tokepoint and Westport look reasonable
 - Job 17718580 (TwinHarbors_test10):
   - Contains just tides
   - Using FlowFM_bnd_test_tides.ext without discharge to test
