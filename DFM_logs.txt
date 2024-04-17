@@ -5,6 +5,7 @@ Log of DelftFM runs
   - Contains just tides
   - Changing start date from November 13 to see if it will work
   - TStart, HisInterval, MapInterval = 1036800
+  - Water level blows up again after (~39 hours in @ both locations)
 
 04/15/24:
 - Job 17729364 (TwinHarbors_test10):
