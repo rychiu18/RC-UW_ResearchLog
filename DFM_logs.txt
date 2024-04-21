@@ -4,8 +4,9 @@ Log of DelftFM runs
 - Job 17808532 (TwinHarbors_test13):
   - Tides only
   - Use original slurm, dimr and submit files but removed waves block from dimr file
-  - Water level at Tokepoint and Westport explodes at 42 hours 
   - Model run starts on November 15
+  - Water level at Tokepoint and Westport explodes at 42 hours 
+  
 
 04/18/24:
 - Job 17805457 (TwinHarbors_test13):
