@@ -1,10 +1,31 @@
 Log of DelftFM runs
 
+04/19/24:
+- Job 17808532 (TwinHarbors_test13):
+  - Tides only
+  - Use original slurm, dimr and submit files but removed waves block from dimr file
+  - Model run starts on November 15
+  - Water level at Tokepoint and Westport explodes at 42 hours 
+  
+
+04/18/24:
+- Job 17805457 (TwinHarbors_test13):
+  - TwinHarbors folder to start from scratch
+  - Only implementing tides but changing TStart to November 15 (1209600) to see if water levels explode
+  - Changed RefDate in .mdu file to 20231101
+    - Left TEnd the same (27 days into the month)
+    - Removed FlowFM.ext file (to remove MET forcing)
+  - Removed discharge from FlowFM_bnd.ext file
+  - Used new (Yingzhong's) dimr_.xml, submit_singularity.sh, and test.slurm scripts
+  - Still blows up on hour 39
+
+
 04/17/24:
 - Job 17758936 (TwinHarbors_test10):
   - Contains just tides
   - Changed start date from November 14 to see if water levels blow up at same time
   - TStart, HisInterval, MapInterval = 1123200
+  - Water level blows up again (~39 hours in)
 
 04/16/24:
 - Job 17738195 (TwinHarbors_test10):
