@@ -1,5 +1,12 @@
 Log of DelftFM runs
 
+04/23/24:
+- Job 17835364 (TwinHarbors_test10):
+  - Tides, MET, Q, waves (running to entirety from Nov. 23 - Dec. 12 for CoPes all hands meeting)
+  - Changed TStart to Nov. 23 (1900800)
+  - Added FlowFM_test.ext to ExtForcingFile
+  - Changed ExtForcingFileNew to FlowFM_bnd_test.ext
+
 04/19/24:
 - Job 17808532 (TwinHarbors_test13):
   - Tides only
