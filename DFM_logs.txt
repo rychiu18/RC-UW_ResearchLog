@@ -1,11 +1,16 @@
 Log of DelftFM runs
 
 04/23/24:
+- Job 17841266 (TwinHarbors_test10):
+  - Changed TStop and HisInterval and MapInterval stop times to 3538800
+  - Turned on waves, so has tides, MET, Q, and waves
 - Job 17835364 (TwinHarbors_test10):
-  - Tides, MET, Q, waves (running to entirety from Nov. 23 - Dec. 12 for CoPes all hands meeting)
+  - Tides, MET, Q (running to entirety from Nov. 23 - Dec. 12 for CoPes all hands meeting)
   - Changed TStart to Nov. 23 (1900800)
   - Added FlowFM_test.ext to ExtForcingFile
   - Changed ExtForcingFileNew to FlowFM_bnd_test.ext
+  - Failed bc TStop was end of Dec 12th but MET data only provides data up to Dec 11th, 2300
+    - Forgot to turn on waves, so finished in 10 hours
 
 04/19/24:
 - Job 17808532 (TwinHarbors_test13):
