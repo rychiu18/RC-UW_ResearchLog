@@ -3,6 +3,8 @@ Log of DelftFM runs
 04/23/24:
 - Job 17847851 (TwinHarbors_test10:
   - Switched back to dimr file with waves so should have T, MET, Q, and W
+  - Failed: Reached max time limit (120 days - 5 days)
+    - Completed up to December 8, 2023
 - Job 17841266 (TwinHarbors_test10):
   - Changed TStop and HisInterval and MapInterval stop times to 3538800
   - Turned on waves, so has tides, MET, Q, and waves
