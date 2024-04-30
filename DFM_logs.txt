@@ -1,7 +1,13 @@
 Log of DelftFM runs
 
+04/29/24:
+- Job 17945163 (TwinHarbors_test13):
+  - Switched back to newer dimr, submit, and slurm files
+  - Running with tides only
+  - Changed start and end to Nov. 23 to Dec. 12
+
 04/23/24:
-- Job 17847851 (TwinHarbors_test10:
+- Job 17847851 (TwinHarbors_test10):
   - Switched back to dimr file with waves so should have T, MET, Q, and W
   - Failed: Reached max time limit (120 days - 5 days)
     - Completed up to December 8, 2023
