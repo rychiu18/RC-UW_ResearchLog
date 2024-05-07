@@ -4,7 +4,7 @@ Log of DelftFM runs
 - Job 18090231 (TwinHarbors_test13):
   - Tides only
   - Configs: new dimr, submit, and slurm files
-  - Changed start date to Nov. 8 ending Nov. 27 (TStart = 604800, TStop = 
+  - Changed start date to Nov. 8 ending Nov. 27 (TStart = 604800, TStop = 2332800)
 
 
 04/30/24:
