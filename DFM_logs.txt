@@ -5,6 +5,7 @@ Log of DelftFM runs
   - Tides only
   - Configs: new dimr, submit, and slurm files
   - Changed start date to Nov. 8 ending Nov. 27 (TStart = 604800, TStop = 2332800)
+  - Completed, water levels looked fine! :)
 
 
 04/30/24:
