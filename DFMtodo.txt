@@ -1,0 +1,8 @@
+# To do list for Twin Harbors DFM model
+
+- Include North River?
+- Combine *map.nc files and filter out ghost cells
+- Look at instabilities at coastline (for Nov. 15 runs) and investigate (bathymetry smoothing?)
+- Water level truncation using Stantec's coordinates
+	- FIXED: moved points over
+- Create restart file after running tides for ~10 days
