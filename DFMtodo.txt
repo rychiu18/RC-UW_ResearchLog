@@ -1,8 +1,17 @@
 # To do list for Twin Harbors DFM model
 
-- Include North River?
-- Combine *map.nc files and filter out ghost cells
-- Look at instabilities at coastline (for Nov. 15 runs) and investigate (bathymetry smoothing?)
-- Water level truncation using Stantec's coordinates
-	- FIXED: moved points over
+To-do:
+- Filter out ghost cells in combined map.nc file
+- Investigate high SSH levels at specific areas in model domain (e.g. North Cove)
+- Add new SWAN model grid and incorporate forcing from new offshore buoys
 - Create restart file after running tides for ~10 days
+- Investigate a method to incorporate North River discharge into Willapa Bay
+	- Stage-discharge relationship?
+
+Resolved:
+- Create script to combine *map.nc files
+- Investigate instabilities when starting model on/around November 15, 2023
+	- Issue with falling on spring tidal phase
+	- Resolved by moving start date to neap tidal phase
+- Water level truncation using Stantec's coordinates
+	- Resolved by moving points over
