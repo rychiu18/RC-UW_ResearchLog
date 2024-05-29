@@ -1,5 +1,16 @@
 Log of DelftFM runs
 
+05/28/24:
+- Job 18602553 (CEWA572_02):
+  - Tides, MET, and waves
+  - New SWAN grid with OOI buoy forcing on western and northern edges
+  - Outputting 1D and 2Dspeectra data at select points
+
+05/25/24:
+- Job 18602553 (CEWA572):
+  - Tides, MET, and waves
+  - New SWAN grid with OOI buoy forcing on western and northern edges
+
 05/06/24:
 - Job 18090231 (TwinHarbors_test13):
   - Tides only
