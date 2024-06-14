@@ -23,17 +23,17 @@
 #### c) What is the relationship between river discharge, point of transition between fluvial and oceanic influence, and tidal asymmetry?
 	- Goals: investigate the influence of tidal phasing on regulating the along channel transition point where fluvial processes (river discharge) begins to dominate over tidal influence. 
 
-	- Literature:
-		- Dynamics of Willapa Bay, Washington: a highly unsteady, partially mixed estuary (Banas et al., 2004)
-		- Compound flooding in convergent estuaries: insights from an analytical model (Familkhalili et al., 2022)
-		- Wind effects on the circulation of a geometrically-complex small estuary (Jarrin & Sutherland, 2022)
-		- High-Frequency Tide-Surge-River Interaction in Estuaries: Causes and Implications for Coastal Flooding (Spicer et al., 2019)
-		- Compounding of Sea-Level Processes During High-Tide Flooding Along the US Coastline (Li et al., 2023)
-		- Analytical and numerical analysis of tides and salinities in estuaries; part I: tidal wave propagation in convergent estuaries (Van Rijn, 2011)
-		- A Numerical Investigation of Hurricane Florence-Induced Compound Flooding in the Cape Fear Estuary Using a Dynamically Coupled Hydrological-Ocean Model (Bao et al., 2022)
-		- Reversed Lateral Circulation in a Sharp Estuarine Bend with Weak Stratification (Kranenburg et al., 2019)
-		- Wave-current interaction in Willapa Bay (Olabarrieta et al., 2011)
-		- The Tidally Averaged Momentum Balance in a Partially and Periodically Stratified Estuary (2010)
+Literature:
+	- Dynamics of Willapa Bay, Washington: a highly unsteady, partially mixed estuary (Banas et al., 2004)
+	- Compound flooding in convergent estuaries: insights from an analytical model (Familkhalili et al., 2022)
+	- Wind effects on the circulation of a geometrically-complex small estuary (Jarrin & Sutherland, 2022)
+	- High-Frequency Tide-Surge-River Interaction in Estuaries: Causes and Implications for Coastal Flooding (Spicer et al., 2019)
+	- Compounding of Sea-Level Processes During High-Tide Flooding Along the US Coastline (Li et al., 2023)
+	- Analytical and numerical analysis of tides and salinities in estuaries; part I: tidal wave propagation in convergent estuaries (Van Rijn, 2011)
+	- A Numerical Investigation of Hurricane Florence-Induced Compound Flooding in the Cape Fear Estuary Using a Dynamically Coupled Hydrological-Ocean Model (Bao et al., 2022)
+	- Reversed Lateral Circulation in a Sharp Estuarine Bend with Weak Stratification (Kranenburg et al., 2019)
+	- Wave-current interaction in Willapa Bay (Olabarrieta et al., 2011)
+	- The Tidally Averaged Momentum Balance in a Partially and Periodically Stratified Estuary (Stacey et al., 2010)
 		
 
 
@@ -42,14 +42,15 @@
 	- Need to incorporate salinity and depth?
 	- Enhanced friction and mixing affecting stratification, leading to decreased stratification and weaker density driven flows
 	- Flooding on outer banks affected by asymmetric cross channel water surface slope
-	- Literature:
-		- Mechanisms of Exchange Flow in an Estuary with a Narrow, Deep Channel and Wide, Shallow Shoals (Geyer et al., 2020)
-		- Secondary circulation in a region of flow curvature: Relationship with tidal forcing and river discharge (Chant, 2002)
-		- Tidal variability of lateral advection in a coastal plain estuary (Basdurak & Levinson, 2013)
-		- Modeling the lateral circulation in straight, stratified estuaries (Lerczak & Geyer, 2004)
-		- The influence of lateral advection on the residual estuarine circulation: a numerical modeling study of the Hudson River Estuary (Scully et al., 2009)
-		- Importance of cross-channel bathymetry and eddy viscosity parameterization in modeling estuarine flow (Zitman & Schuttelaars, 2012)
-		- Secondary currents in a curved, stratified, estuarine channel (Lacy & Monismith, 2001)
+
+Literature:
+	- Mechanisms of Exchange Flow in an Estuary with a Narrow, Deep Channel and Wide, Shallow Shoals (Geyer et al., 2020)
+	- Secondary circulation in a region of flow curvature: Relationship with tidal forcing and river discharge (Chant, 2002)
+	- Tidal variability of lateral advection in a coastal plain estuary (Basdurak & Levinson, 2013)
+	- Modeling the lateral circulation in straight, stratified estuaries (Lerczak & Geyer, 2004)
+	- The influence of lateral advection on the residual estuarine circulation: a numerical modeling study of the Hudson River Estuary (Scully et al., 2009)
+	- Importance of cross-channel bathymetry and eddy viscosity parameterization in modeling estuarine flow (Zitman & Schuttelaars, 2012)
+	- Secondary currents in a curved, stratified, estuarine channel (Lacy & Monismith, 2001)
 
 
 ## 3) Using JPL's OPERA project (dynamic surface water extent products) to detect flooding extents in Willapa Bay and Grays Harbor
