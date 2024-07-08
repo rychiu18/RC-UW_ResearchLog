@@ -8,7 +8,7 @@ Log of DelftFM runs
   - Added sample_fxw.pliz file for weir
   - Turned salinity off
   - Only tides, MET, and discharge
-  - Changed "CrsFile = " to 1 in FlowFM.mdu file to enable creation of additional .mdu and .cache files for cross sections
+  - Copied over "dimr*" file from Yingzhong's TwinHarbors_test2 folder
 
 05/28/24:
 - Job 18602553 (CEWA572_02):
