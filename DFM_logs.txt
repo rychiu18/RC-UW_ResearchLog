@@ -1,6 +1,6 @@
 Log of DelftFM runs
 
-07/05/24:
+07/07/24:
 - Job 19250446 (TwinHarbors_test15)
   - Using new grid from Yingzhong (includes extended Chehalis, Satsop, Wynoochee, and Willapa) - final_mesh_net.nc
   - Added new points to .pli files
