@@ -1,14 +1,28 @@
 Log of DelftFM runs
 
-07/07/24:
-- Job 19250608 (TwinHarbors_test15)
+07/08/24:
+- Job 19254338 (TwinHarbors_test15)
+  - Only tides, MET, and discharge
+  - Set max run time to 20 hours in test.slurm file
   - Using new grid from Yingzhong (includes extended Chehalis, Satsop, Wynoochee, and Willapa) - final_mesh_net.nc
   - Added new points to .pli files
   - Running from Nov 23 to Dec 12
-  - Added sample_fxw.pliz file for weir
+  - Changed nProc=32 in submit_singularity.sh file (32 partitions for new map)
+  - Changes to FlowFM.mdu file
+    - NetFile = final_mesh_net.nc
+    - FixedWeirFile = sample_fxw.pliz
+    - Other weir parameters (contraction, relaxcoef, etc)
+    - Salinity = 0
+    - InitialSalinity = 0
+    - HisInterval = 300 1900800 3628800
+    - Wrihis_balance = 0
+    - Wrihis_infiltration
+
+
   - Turned salinity off
   - Only tides, MET, and discharge
-  - Copied over slurm, dimr, and submit_singularity files from TwinHarbors_test10 folder
+  - Copied over dimr file from /gscratch/derakhti/users/yzlou/Delft3dfm/TwinHarbors_test2/
+    - New files should have 32 partitions (changed number of partitions in the submit_singulary.sh file as well
 
 05/28/24:
 - Job 18602553 (CEWA572_02):
