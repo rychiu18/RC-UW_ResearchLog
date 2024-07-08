@@ -1,13 +1,14 @@
 Log of DelftFM runs
 
 07/05/24:
-- Job 19232251 (TwinHarbors_test15)
+- Job 19250446 (TwinHarbors_test15)
   - Using new grid from Yingzhong (includes extended Chehalis, Satsop, Wynoochee, and Willapa) - final_mesh_net.nc
   - Added new points to .pli files
   - Running from Nov 23 to Dec 12
   - Added sample_fxw.pliz file for weir
   - Turned salinity off
   - Only tides, MET, and discharge
+  - Changed "CrsFile = " to 1 in FlowFM.mdu file to enable creation of additional .mdu and .cache files for cross sections
 
 05/28/24:
 - Job 18602553 (CEWA572_02):
