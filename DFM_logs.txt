@@ -1,5 +1,35 @@
 Log of DelftFM runs
 
+07/10/24:
+- Job 19273326 (TwinHarbors_test15):
+  - Only tides and MET
+  - Removed discharge in forcing file and running for max 7 days
+
+07/08/24:
+- Job 19254338 (TwinHarbors_test15):
+  - Only tides, MET, and discharge
+  - Set max run time to 20 hours in test.slurm file
+  - Using new grid from Yingzhong (includes extended Chehalis, Satsop, Wynoochee, and Willapa) - final_mesh_net.nc
+  - Added new points to .pli files
+  - Running from Nov 23 to Dec 12
+  - Changed nProc=32 in submit_singularity.sh file (32 partitions for new map)
+  - Changes to FlowFM.mdu file
+    - NetFile = final_mesh_net.nc
+    - FixedWeirFile = sample_fxw.pliz
+    - Other weir parameters (contraction, relaxcoef, etc)
+    - Salinity = 0
+    - InitialSalinity = 0
+    - HisInterval = 300 1900800 3628800
+    - Wrihis_balance = 0
+    - Wrihis_infiltration = 0
+  - Did not finish run due to short max run time (b/c of node maintenance)
+    - Run only reached to Nov. 25 2300 (2 days and 23 hours)
+    - Winds (x,y) are normal
+    - CDIP036 explodes at ~Nov 25, 2110
+      - Water levels, water depth, velocity magnitude, bottom stress, discharge magnitude
+    - TIDE-5-MON (Montesano) explodes at ~Nov 25, 2220
+      - Water levels, water depth, velocity magnitude, bottom stress, discharge magnitude
+
 05/28/24:
 - Job 18602553 (CEWA572_02):
   - Tides, MET, and waves
