@@ -1,7 +1,12 @@
 Log of DelftFM runs
 
+07/10/24:
+- Job 19273326 (TwinHarbors_test15):
+  - Only tides and MET
+  - Removed discharge in forcing file and running for max 7 days
+
 07/08/24:
-- Job 19254338 (TwinHarbors_test15)
+- Job 19254338 (TwinHarbors_test15):
   - Only tides, MET, and discharge
   - Set max run time to 20 hours in test.slurm file
   - Using new grid from Yingzhong (includes extended Chehalis, Satsop, Wynoochee, and Willapa) - final_mesh_net.nc
