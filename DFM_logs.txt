@@ -23,7 +23,7 @@ Log of DelftFM runs
     - Wrihis_balance = 0
     - Wrihis_infiltration = 0
   - Did not finish run due to short max run time (b/c of node maintenance)
-    - Run only reached 
+    - Run only reached to Nov. 25 2300 (2 days and 23 hours)
     - Winds (x,y) are normal
     - CDIP036 explodes at ~Nov 25, 2110
       - Water levels, water depth, velocity magnitude, bottom stress, discharge magnitude
