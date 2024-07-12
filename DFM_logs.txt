@@ -1,9 +1,19 @@
 Log of DelftFM runs
 
+07/12/24:
+- Job 19286364 (TwinHarbors_test15):
+  - Only tides and MET
+  - Changed oc_north.pli points to Yingzhong's (removes inner shelf points)
+  - Changed to nodes (3) in test.slurm
+  - Changed nNodes (3) and nProc (36) in submit_singularity.sh (total of 108 processors)
+
 07/10/24:
 - Job 19273326 (TwinHarbors_test15):
   - Only tides and MET
   - Removed discharge in forcing file and running for max 7 days
+  - Water levels still exploded
+  - Ended run after ~1.5 days b/c realized that I'm using the old northern boundary points
+    - Will need to constrain northern boundary to not include inner shelf points that may lead to instabilities
 
 07/08/24:
 - Job 19254338 (TwinHarbors_test15):
