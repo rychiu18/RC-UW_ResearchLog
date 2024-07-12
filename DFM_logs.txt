@@ -1,11 +1,12 @@
 Log of DelftFM runs
 
 07/12/24:
-- Job 19286364 (TwinHarbors_test15):
+- Job 19286486 (TwinHarbors_test15):
   - Only tides and MET
   - Changed oc_north.pli points to Yingzhong's (removes inner shelf points)
   - Changed to nodes (3) in test.slurm
   - Changed nNodes (3) and nProc (36) in submit_singularity.sh (total of 108 processors)
+  - Removed Columbia discharge b/c not useful (not applicable to this bc only tides and MET)
 
 07/10/24:
 - Job 19273326 (TwinHarbors_test15):
