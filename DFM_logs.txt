@@ -1,13 +1,15 @@
 Log of DelftFM runs
 
 07/13/24:
-- Job (TwinHarbors_test15):
+- Job 19311630 (TwinHarbors_test15):
   - Edited coordinates in .pli files to be within new grid
     - Porter (used Yingzhong's)
     - Satsop (used Yingzhong's)
     - Wynoochee (used Yingzhong's)
     - Willapa (used Yingzhong's)
     - Naselle (used new coordinates for new grid, Lewis and Clark highway overpass as arbitrary point chosen from most upstream visible conveyance)
+- Changed TStop for .mdu file to match .am* files (3538800 which is equivalent to 983 hours)
+  - This also matches up with discharge files
 
 07/12/24:
 - Job 19286486 (TwinHarbors_test15):
