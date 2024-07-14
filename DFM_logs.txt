@@ -7,6 +7,10 @@ Log of DelftFM runs
   - Changed to nodes (3) in test.slurm
   - Changed nNodes (3) and nProc (36) in submit_singularity.sh (total of 108 processors)
   - Removed Columbia discharge b/c not useful (not applicable to this bc only tides and MET)
+  - Job failed BUT model run was successful!
+    - End of .am* files reached b/c end time of .mdu and .am* files don't match, but still should be fine
+      - .am* files go to 983 hours (40.9583 days), but .mdu file goes to 42
+      - Water levels look normal!
 
 07/10/24:
 - Job 19273326 (TwinHarbors_test15):
