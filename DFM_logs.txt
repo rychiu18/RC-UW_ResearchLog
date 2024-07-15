@@ -1,6 +1,11 @@
 Log of DelftFM runs
 
 07/15/24:
+- Job 19338596 (TwinHarbors_test15):
+  - Running for tides, MET, discharge, and waves
+  - Yingzhong fixed grid (removed small hole/cell in grid) - /mmfs1/gscratch/derakhti/users/yzlou/Delft3dfm/TwinHarbors_test2/dflowfm/final_mesh_net_new.nc
+  - Replaced grid in folder with final_mesh_net_new.nc and edited .mdu file accordingly
+
 - Job 19331548 (TwinHarbors_test15):
   - Running for tides, MET, discharge, and waves
   - Changed HisInterval to 3600 in FlowFM.mdu file
