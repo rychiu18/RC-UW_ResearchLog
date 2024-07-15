@@ -1,11 +1,16 @@
 Log of DelftFM runs
 
 07/15/24:
+- Job 19331489 (TwinHarbors_test15):
+  - Running for tides, MET, discharge, and waves
+  - Changed wave module block in dimr file back to original 30 day interval
+
+07/15/24:
 - Job 19331222 (TwinHarbors_test15):
   - Running for tides, MET, discharge, and waves
   - Changed HisInterval to 3600 in FlowFM.mdu file
   - Added in waves folder and turned on waves module in FlowFM.mdu
-  - Changed .dimr file to include wave module blocks
+  - Changed .dimr file to include wave module blocks (but made end time for waves interval as 41 days)
   - Run FAILED:
     - ERROR nNetElemMaxNode = 5. Expecting 3 or 4.
  ERROR: nNetElemMaxNode should be 3 or 4
