@@ -1,10 +1,11 @@
 Log of DelftFM runs
 
 07/14/24:
-- Job 19322601 (TwinHarbors_test15):
+- Job 19331222 (TwinHarbors_test15):
   - Running for tides, MET, discharge, and waves
   - Changed HisInterval to 3600 in FlowFM.mdu file
   - Added in waves folder and turned on waves module in FlowFM.mdu
+  - Changed .dimr file to include wave module blocks
 
 07/13/24:
 - Job 19311630 (TwinHarbors_test15):
