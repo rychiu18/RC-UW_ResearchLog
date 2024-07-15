@@ -1,7 +1,14 @@
 Log of DelftFM runs
 
+07/14/24:
+- Job 19322601 (TwinHarbors_test15):
+  - Running for tides, MET, discharge, and waves
+  - Changed HisInterval to 3600 in FlowFM.mdu file
+  - Added in waves folder and turned on waves module in FlowFM.mdu
+
 07/13/24:
 - Job 19311630 (TwinHarbors_test15):
+  - Running for tides, MET, and discharge
   - Edited coordinates in .pli files to be within new grid
     - Porter (used Yingzhong's)
     - Satsop (used Yingzhong's)
@@ -10,6 +17,9 @@ Log of DelftFM runs
     - Naselle (used new coordinates for new grid, Lewis and Clark highway overpass as arbitrary point chosen from most upstream visible conveyance)
 - Changed TStop for .mdu file to match .am* files (3538800 which is equivalent to 983 hours)
   - This also matches up with discharge files
+- Job COMPLETED
+  - Took ~9 hours to complete
+  - Water levels look normal with elevated water levels at Montesano (but still not 100% matching observations)
 
 07/12/24:
 - Job 19286486 (TwinHarbors_test15):
