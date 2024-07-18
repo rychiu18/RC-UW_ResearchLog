@@ -1,9 +1,61 @@
 Log of DelftFM runs
 
+07/15/24:
+- Job 19338596 (TwinHarbors_test15):
+  - Running for tides, MET, discharge, and waves
+  - Yingzhong fixed grid (removed small hole/cell in grid) - /mmfs1/gscratch/derakhti/users/yzlou/Delft3dfm/TwinHarbors_test2/dflowfm/final_mesh_net_new.nc
+  - Replaced grid in folder with final_mesh_net_new.nc and edited .mdu file accordingly
+
+- Job 19331548 (TwinHarbors_test15):
+  - Running for tides, MET, discharge, and waves
+  - Changed HisInterval to 3600 in FlowFM.mdu file
+  - Added in waves folder and turned on waves module in FlowFM.mdu
+  - Changed .dimr file to include wave module blocks (but made end time for waves interval as 41 days)
+  - Run FAILED:
+    - ERROR nNetElemMaxNode = 5. Expecting 3 or 4.
+ ERROR: nNetElemMaxNode should be 3 or 4
+ Wave exited abnormally
+#### ERROR: dimr initialize ABORT with unknown exception
+Dimr [2024-07-15 11:07:51.812219] #0 >> libdimr.so.Initialize(dimr_config_parallel.xml) returned error value -1
+#### ERROR: dimr ABORT: libdimr.so.Initialize(dimr_config_parallel.xml) returned error value -1
+#### ERROR: dimr ABORT: See messages above
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+
+07/13/24:
+- Job 19311630 (TwinHarbors_test15):
+  - Running for tides, MET, and discharge
+  - Edited coordinates in .pli files to be within new grid
+    - Porter (used Yingzhong's)
+    - Satsop (used Yingzhong's)
+    - Wynoochee (used Yingzhong's)
+    - Willapa (used Yingzhong's)
+    - Naselle (used new coordinates for new grid, Lewis and Clark highway overpass as arbitrary point chosen from most upstream visible conveyance)
+- Changed TStop for .mdu file to match .am* files (3538800 which is equivalent to 983 hours)
+  - This also matches up with discharge files
+- Job COMPLETED
+  - Took ~9 hours to complete
+  - Water levels look normal with elevated water levels at Montesano (but still not 100% matching observations)
+
+07/12/24:
+- Job 19286486 (TwinHarbors_test15):
+  - Only tides and MET
+  - Changed oc_north.pli points to Yingzhong's (removes inner shelf points)
+  - Changed to nodes (3) in test.slurm
+  - Changed nNodes (3) and nProc (36) in submit_singularity.sh (total of 108 processors)
+  - Removed Columbia discharge b/c not useful (not applicable to this bc only tides and MET)
+  - Job failed BUT model run was successful!
+    - End of .am* files reached b/c end time of .mdu and .am* files don't match, but still should be fine
+      - .am* files go to 983 hours (40.9583 days), but .mdu file goes to 42
+      - Water levels look normal!
+    - Took ~7 hours to complete with 108 processors!
+
 07/10/24:
 - Job 19273326 (TwinHarbors_test15):
   - Only tides and MET
   - Removed discharge in forcing file and running for max 7 days
+  - Water levels still exploded
+  - Ended run after ~1.5 days b/c realized that I'm using the old northern boundary points
+    - Will need to constrain northern boundary to not include inner shelf points that may lead to instabilities
 
 07/08/24:
 - Job 19254338 (TwinHarbors_test15):
