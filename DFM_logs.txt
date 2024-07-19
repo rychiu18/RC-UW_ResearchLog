@@ -5,6 +5,8 @@ Log of DelftFM runs
   - Running for tides, MET, discharge, and waves
   - Yingzhong fixed grid (removed small hole/cell in grid) - /mmfs1/gscratch/derakhti/users/yzlou/Delft3dfm/TwinHarbors_test2/dflowfm/final_mesh_net_new.nc
   - Replaced grid in folder with final_mesh_net_new.nc and edited .mdu file accordingly
+  - Extended run time to 14 days b/c model running very slow
+    - As of 07/18/24 2200, model has been running for 3 days 6 hours and only produced 11 days and 8 hours
 
 - Job 19331548 (TwinHarbors_test15):
   - Running for tides, MET, discharge, and waves
