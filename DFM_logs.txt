@@ -1,11 +1,12 @@
 Log of DelftFM runs
 
 07/15/24:
-- Job 19433778 (TwinHarbors_test15):
+- Job 19433780 (TwinHarbors_test15):
   - Running for tides, MET, discharge, and waves
   - Rerunning again bc accidentally stopped the last one
   - Added in new stations to NOAA_WL.xyn
     - CHEHALIS-MOUTH, CHEHALIS-PORTER, WILLAPA-MOUTH, WILLAPA-USGS
+  - Extended run time in test.slurm to 14 days (336 hours)
 
 07/15/24:
 - Job 19338596 (TwinHarbors_test15):
