@@ -1,6 +1,14 @@
 Log of DelftFM runs
 
-07/15/24:
+07/19/24:
+- Job 19436406 (TwinHarbors_test15):
+  - Running for tides, MET, discharge, and waves
+  - Rerunning again bc disk quota exceeded for last run
+    - Should have enough storage (more than 258 GB left in server)
+
+
+
+07/18/24:
 - Job 19433780 (TwinHarbors_test15):
   - Running for tides, MET, discharge, and waves
   - Rerunning again bc accidentally stopped the last one
@@ -8,6 +16,7 @@ Log of DelftFM runs
     - CHEHALIS-MOUTH, CHEHALIS-PORTER, WILLAPA-MOUTH, WILLAPA-USGS
   - Extended run time in test.slurm to 14 days (336 hours)
   - Failed after ~9 hours due to disk quota exceeded error
+    - Only able to run to Nov 25 0100
 
 07/15/24:
 - Job 19338596 (TwinHarbors_test15):
