@@ -7,6 +7,7 @@ Log of DelftFM runs
   - Replaced grid in folder with final_mesh_net_new.nc and edited .mdu file accordingly
   - Extended run time to 14 days b/c model running very slow (scontrol update jobid=19338596 TimeLimit=336)
     - As of 07/18/24 2200, model has been running for 3 days 6 hours and only produced 11 days and 8 hours
+    - Command made job fail
 
 - Job 19331548 (TwinHarbors_test15):
   - Running for tides, MET, discharge, and waves
