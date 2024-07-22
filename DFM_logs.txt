@@ -7,6 +7,8 @@ Log of DelftFM runs
     - Should have enough storage (more than 258 GB left in server)
   - After 1-22:33:11 (1 day 22 hours), model is at 12-02 10:00
   - After 2-04:16:05 (2 days 04 hours), model is at 12-02 20:00 (187GB)
+  - FAILED after running for 2-05:09:49
+    - Disk quota exceeded
 
 
 07/18/24:
