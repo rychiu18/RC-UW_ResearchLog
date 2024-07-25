@@ -1,10 +1,42 @@
 Log of DelftFM runs
 
+07/23/24:
+- Job 19687905 (TwinHarbors_test15):
+  - Running for tides, MET, discharge, and waves
+  - Rerunning again bc disk quota exceeded for last run
+    - Should have enough storage (2906GB left in group while checking)
+  - Turning output parameters off to speed it up (=0) in FlowFM.mdu file:
+    - Wrihis_sourcesink, Wrihis_structure_gen, Wrihis_structure_weir, Wrihis_turbulence, Wrihis_infiltration, Wrihis_salinity, Wrihis_density, Wrihis_upward_velocity_component, Wrihis_sediment, Wrihis_constituents, Wrimap_upward_velocity_component, Wrimap_density_rho, Wrimap_horizontal_viscosity_viu, Wrimap_horizontal_diffusivity_diu, Wrimap_spiral_flow, Wrimap_chezy, Wrimap_turbulence
+
+07/19/24:
+- Job 19436406 (TwinHarbors_test15):
+  - Running for tides, MET, discharge, and waves
+  - Rerunning again bc disk quota exceeded for last run
+    - Should have enough storage (more than 258 GB left in server)
+  - After 1-22:33:11 (1 day 22 hours), model is at 12-02 10:00
+  - After 2-04:16:05 (2 days 04 hours), model is at 12-02 20:00 (187GB)
+  - FAILED after running for 2-05:09:49
+    - Disk quota exceeded
+
+
+07/18/24:
+- Job 19433780 (TwinHarbors_test15):
+  - Running for tides, MET, discharge, and waves
+  - Rerunning again bc accidentally stopped the last one
+  - Added in new stations to NOAA_WL.xyn
+    - CHEHALIS-MOUTH, CHEHALIS-PORTER, WILLAPA-MOUTH, WILLAPA-USGS
+  - Extended run time in test.slurm to 14 days (336 hours)
+  - Failed after ~9 hours due to disk quota exceeded error
+    - Only able to run to Nov 25 0100
+
 07/15/24:
 - Job 19338596 (TwinHarbors_test15):
   - Running for tides, MET, discharge, and waves
   - Yingzhong fixed grid (removed small hole/cell in grid) - /mmfs1/gscratch/derakhti/users/yzlou/Delft3dfm/TwinHarbors_test2/dflowfm/final_mesh_net_new.nc
   - Replaced grid in folder with final_mesh_net_new.nc and edited .mdu file accordingly
+  - Extended run time to 14 days b/c model running very slow (scontrol update jobid=19338596 TimeLimit=336)
+    - As of 07/18/24 2200, model has been running for 3 days 6 hours and only produced 11 days and 8 hours
+    - Command made job fail
 
 - Job 19331548 (TwinHarbors_test15):
   - Running for tides, MET, discharge, and waves
