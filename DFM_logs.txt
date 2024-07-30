@@ -8,7 +8,9 @@ Log of DelftFM runs
   - Turning output parameters off to speed it up (=0) in FlowFM.mdu file:
     - Wrihis_sourcesink, Wrihis_structure_gen, Wrihis_structure_weir, Wrihis_turbulence, Wrihis_infiltration, Wrihis_salinity, Wrihis_density, Wrihis_upward_velocity_component, Wrihis_sediment, Wrihis_constituents, Wrimap_upward_velocity_component, Wrimap_density_rho, Wrimap_horizontal_viscosity_viu, Wrimap_horizontal_diffusivity_diu, Wrimap_spiral_flow, Wrimap_chezy, Wrimap_turbulence
   - Runtime updates:
-    - After ~2-19 (2 days 19 minutes), model has run up to 12-03 14:00:00
+    - After ~2-19 (2 days 19 hours), model has run up to 12-03 14:00:00
+    - After ~6 (6 days), model has run up to 12-07 06:00:00
+    - After ~6-19 (6 days and 19 hours), model has run up to 12-08 00:00:00 (245GB)
 
 07/19/24:
 - Job 19436406 (TwinHarbors_test15):
