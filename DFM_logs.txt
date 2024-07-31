@@ -11,6 +11,7 @@ Log of DelftFM runs
     - After ~2-19 (2 days 19 hours), model has run up to 12-03 14:00:00
     - After ~6 (6 days), model has run up to 12-07 06:00:00
     - After ~6-19 (6 days and 19 hours), model has run up to 12-08 00:00:00 (245GB)
+    - After ~7-09 (7 days and 9 hours), model has run up to 12-08 14:00:00 (254GB)
 
 07/19/24:
 - Job 19436406 (TwinHarbors_test15):
