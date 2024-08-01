@@ -7,6 +7,7 @@ Log of DelftFM runs
   - FlowFM_merged_20231112_000000_rst.nc from TwinHarbors_test13 (Job19762139) used
     - Model run was from November 8 - 20 (good output)
   - Restart date set to 20231112
+  - Changed TStart date in FlowFM.mdu to RestartFile datetime
 
 07/31/24:
 - Job 19758941 (TwinHarbors_test13):
