@@ -8,6 +8,7 @@ Log of DelftFM runs
     - Model run was from November 8 - 20 (good output)
   - Restart date set to 20231112
   - Changed TStart date in FlowFM.mdu to RestartFile datetime (950400 seconds)
+  - Accidentally left TEnd to Nov. 28, so took longer than usual
 
 07/31/24:
 - Job 19758941 (TwinHarbors_test13):
