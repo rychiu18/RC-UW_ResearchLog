@@ -1,12 +1,13 @@
 Log of DelftFM runs
 
 08/01/24:
-- Job  (TwinHarbors_test16):
+- Job 19762170 (TwinHarbors_test16):
   - Running for tides only 
   - Testing restart file configurations
-  - FlowFM_merged_map.nc from TwinHarbors_test13 (Job18090231) used
+  - FlowFM_merged_20231112_000000_rst.nc from TwinHarbors_test13 (Job19758941) used
     - Model run was from November 8 - 20 (good output)
-  - Restart date set to 11122023
+  - Restart date set to 20231112
+  - Changed TStart date in FlowFM.mdu to RestartFile datetime (950400 seconds)
 
 07/31/24:
 - Job 19758941 (TwinHarbors_test13):
