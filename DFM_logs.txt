@@ -1,5 +1,19 @@
 Log of DelftFM runs
 
+08/01/24:
+- Job  (TwinHarbors_test16):
+  - Running for tides only 
+  - Testing restart file configurations
+  - FlowFM_merged_map.nc from TwinHarbors_test13 (Job18090231) used
+    - Model run was from November 8 - 20 (good output)
+  - Restart date set to 11122023
+
+07/31/24:
+- Job 19758941 (TwinHarbors_test13):
+  - Running for tides only from November 8 - 20
+  - Rerunning and setting RstIntervals because need that format for integrating RestartFile
+  - RstInterval = 3600 604800 1641600
+
 07/23/24:
 - Job 19687905 (TwinHarbors_test15):
   - Running for tides, MET, discharge, and waves
@@ -12,6 +26,8 @@ Log of DelftFM runs
     - After ~6 (6 days), model has run up to 12-07 06:00:00
     - After ~6-19 (6 days and 19 hours), model has run up to 12-08 00:00:00 (245GB)
     - After ~7-09 (7 days and 9 hours), model has run up to 12-08 14:00:00 (254GB)
+    - After ~7-19 (7 days and 19 hours), model has run up to 12-09 00:00:00 (261GB)
+    - After ~8-02 (8 days and 2 hours), model has run up to 12-09 06:00:00 (265GB)
 
 07/19/24:
 - Job 19436406 (TwinHarbors_test15):
