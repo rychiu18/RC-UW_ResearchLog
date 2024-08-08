@@ -1,7 +1,7 @@
 Log of DelftFM runs
 
 08/08/24:
-- Job 19878240 (TwinHarbors_test18):
+- Job 19878243 (TwinHarbors_test18):
   - Running with tides and MET
   - Made new observation file NOAA_WL_obs_new.xyn 
     - Removed NOAA_9439040
