@@ -1,5 +1,13 @@
 Log of DelftFM runs
 
+08/09/24:
+- Job 19883575(TwinHarbors_test19):
+  - Running for tides, MET, and discharge
+- Job 19883552 (TwinHarbors_test17):
+  - Running for tides only
+  - Running again bc accidentally overwrote FlowFM_merged_map.nc file with one from TwinHarbors_test18
+
+
 08/08/24:
 - Job 19878243 (TwinHarbors_test18):
   - Running with tides and MET
