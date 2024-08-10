@@ -6,6 +6,7 @@ Log of DelftFM runs
 - Job 19883552 (TwinHarbors_test17):
   - Running for tides only
   - Running again bc accidentally overwrote FlowFM_merged_map.nc file with one from TwinHarbors_test18
+  - Completed
 
 
 08/08/24:
