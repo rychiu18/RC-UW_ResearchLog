@@ -1,7 +1,13 @@
 Log of DelftFM runs
 
+08/12/24:
+- Job 19900194 (TwinHarbors_test18):
+  - Running for tides and MET
+  - Rerunning to verify MET data is being used and FlowFM_merged wasn't a merge of tides only run
+    - Because when comparing Model T and TM, SSH is exactly the same everywhere
+
 08/09/24:
-- Job 19883575(TwinHarbors_test19):
+- Job 19883575 (TwinHarbors_test19):
   - Running for tides, MET, and discharge
 - Job 19883552 (TwinHarbors_test17):
   - Running for tides only
