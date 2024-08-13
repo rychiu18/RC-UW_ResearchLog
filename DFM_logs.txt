@@ -1,5 +1,31 @@
 Log of DelftFM runs
 
+08/09/24:
+- Job 19883575(TwinHarbors_test19):
+  - Running for tides, MET, and discharge
+- Job 19883552 (TwinHarbors_test17):
+  - Running for tides only
+  - Running again bc accidentally overwrote FlowFM_merged_map.nc file with one from TwinHarbors_test18
+  - Completed
+
+
+08/08/24:
+- Job 19878243 (TwinHarbors_test18):
+  - Running with tides and MET
+  - Made new observation file NOAA_WL_obs_new.xyn 
+    - Removed NOAA_9439040
+    - Changed WILLAPA-USGS site coordinates to -123.6526584, 46.65093418 so DFM can find it
+    - Added GH_01, GH_02, GH_03, GH_04, GH_05, GH_05a, GH_05b, GH_06, and GH_07 coordinates based on StormSurgeExtent_GraysHarbor.ipynb (~10km increments from GH mouth to upstream)
+
+08/07/24:
+- Job 19870441 (TwinHarbors_test17):
+  - Running for tides only
+  - Model run for November 23 - December 12, 2023 to compare with 07/23/24 model run with new grid
+  - Using new grid (final_mesh_net_new.nc)
+  - Outputting restart files: RstInterval = 3600 2505600 2937600 (from November 30 to December 5 in case we need that info)
+  - Finished in ~7 hours
+    - Could not find NOAA_9439040, WILLAPA-USGS
+
 08/01/24:
 - Job 19762170 (TwinHarbors_test16):
   - Running for tides only 
