@@ -1,5 +1,41 @@
 Log of DelftFM runs
 
+- Job HAVENT RUN YET!!! (TwinHarbors_test19):
+  - Tides, MET, and Discharge
+  - Newest grid (with sloughs, created on Aug 9) - 'final_mesh_net.nc' from /gscratch/derakhti/users/yzlou/Delft3dfm/TwinHarbors_test2/dflowfm/final_mesh_net.nc
+  - Added 'pickle.slurm' and 'writeDFMvars.py' scripts to folder to isolate
+  - Changes to FlowFM.mdu
+          - NetFile = final_mesh_net.nc
+          - Wrihis_balance = 1
+          - Wrihis_sourcesink = 1
+          - Wrimap_density_rho = 1
+          - Writebalancefile = 1
+          - ObsFile = NOAA_WL_obs_new.xyn
+
+08/15/24:
+- Job HAVENT RUN YET!!! (TwinHarbors_test18): !!!!!!!!!!!!!MAKE SURE TO RUN PICKLE SCRIPT FIRST TO GET OLD OUTPUT!!!!!!!!!!!!!!!!!!
+  - Tides and MET
+  - Newest grid (with sloughs, created on Aug 9) - 'final_mesh_net.nc' from /gscratch/derakhti/users/yzlou/Delft3dfm/TwinHarbors_test2/dflowfm/final_mesh_net.nc
+  - Added 'pickle.slurm' and 'writeDFMvars.py' scripts to folder to isolate
+  - Changes to FlowFM.mdu
+          - NetFile = final_mesh_net.nc
+          - Wrihis_balance = 1
+          - Wrihis_sourcesink = 1
+          - Wrimap_density_rho = 1
+          - Writebalancefile = 1
+          - ObsFile = NOAA_WL_obs_new.xyn
+- Job 19922312 (TwinHarbors_test17):
+  - Tides only
+  - Newest grid (with sloughs, created on Aug 9) - 'final_mesh_net.nc' from /gscratch/derakhti/users/yzlou/Delft3dfm/TwinHarbors_test2/dflowfm/final_mesh_net.nc
+  - Added new observation file to folder - 'NOAA_WL_obs_new.xyn'
+  - Added 'pickle.slurm' and 'writeDFMvars.py' scripts to folder to isolate
+  - Changes to FlowFM.mdu
+    - NetFile = final_mesh_net.nc
+    - Wrihis_balance = 1
+    - Wrihis_sourcesink = 1
+    - ObsFile = NOAA_WL_obs_new.xyn (using new file with transect points)
+  - RUNNING
+
 08/12/24:
 - Job 19900194 (TwinHarbors_test18):
   - Running for tides and MET
