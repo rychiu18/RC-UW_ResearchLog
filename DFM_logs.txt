@@ -13,7 +13,7 @@ Log of DelftFM runs
           - ObsFile = NOAA_WL_obs_new.xyn
 
 08/15/24:
-- Job 19927187 (TwinHarbors_test18):
+- Job 19927191 (TwinHarbors_test18):
   - Tides and MET
   - Newest grid (with sloughs, created on Aug 9) - 'final_mesh_net.nc' from /gscratch/derakhti/users/yzlou/Delft3dfm/TwinHarbors_test2/dflowfm/final_mesh_net.nc
   - Added 'pickle.slurm' and 'writeDFMvars.py' scripts to folder to isolate
@@ -22,7 +22,6 @@ Log of DelftFM runs
           - Wrihis_balance = 1
           - Wrihis_sourcesink = 1
           - Wrimap_density_rho = 1
-          - Writebalancefile = 1
           - ObsFile = NOAA_WL_obs_new.xyn
   - RUNNING
 - Job 19922312 (TwinHarbors_test17):
