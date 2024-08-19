@@ -12,6 +12,7 @@ Log of DelftFM runs
           - Wrihis_sourcesink = 1
           - Wrimap_density_rho = 1
           - ObsFile = NOAA_WL_obs_new.xyn
+  - COMPLETED (took 9hr18m, including merge script)
 
 08/16/24:
 - Job 19928355 (TwinHarbors_test18):
