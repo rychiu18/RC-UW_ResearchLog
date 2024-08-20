@@ -34,6 +34,7 @@ Literature:<br>
 	- Reversed Lateral Circulation in a Sharp Estuarine Bend with Weak Stratification (Kranenburg et al., 2019)<br>
 	- Wave-current interaction in Willapa Bay (Olabarrieta et al., 2011)<br>
 	- The Tidally Averaged Momentum Balance in a Partially and Periodically Stratified Estuary (Stacey et al., 2010)<br>
+	- Tidal propagation in strongly convergent channels Tidal propagation in strongly convergent channels (Friedrichs & Aubrey, 1994)<br>
 		
 
 ## 2) Effects on exchange flow around sharp bends during compound flooding events
