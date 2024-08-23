@@ -1,7 +1,7 @@
 Log of DelftFM runs
 
 08/23/24:
-- Job 20006836 (TwinHarbors_test20):
+- Job 20006843 (TwinHarbors_test20):
   - This Job is TIDES ONLY, but added everything else to prepare
   - Added in all relevant files (*.pli, *.bc, *.ext, *.slurm, *.sh, *amp, *amu, *amv, etc)
   - Created new forcing file names:
