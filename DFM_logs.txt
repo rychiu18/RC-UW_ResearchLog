@@ -19,6 +19,7 @@ Log of DelftFM runs
       - Between 10 days and 21 days
     - ExtForceFile = FlowFM.ext # ExtForceFile with NO MET data
   - Made new submit_singularity_map.sh to test if '$singularitydir/execute_singularity.sh run_dfmoutput.sh -- mapmerge --infile *_map.nc' line works
+  - Running on ckpt partition b/c derakhti is busy
 
 
 08/17/24:
