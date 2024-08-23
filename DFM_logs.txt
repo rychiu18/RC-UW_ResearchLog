@@ -1,9 +1,9 @@
 Log of DelftFM runs
 
 08/23/24:
-- Job 20006843 (TwinHarbors_test20):
+- Job 20007173 (TwinHarbors_test20):
   - This Job is TIDES ONLY, but added everything else to prepare
-  - Added in all relevant files (*.pli, *.bc, *.ext, *.slurm, *.sh, *amp, *amu, *amv, etc)
+  - Added in all relevant files (*.pli, *.bc, *.ext, *.slurm, *.sh, *amp, *amu, *amv, *xyn, etc)
   - Created new forcing file names:
     - FlowFM.ext: ExtForceFile with NO MET data
     - FlowFM_MET.ext: ExtForceFile WITH MET data
@@ -18,8 +18,10 @@ Log of DelftFM runs
     - RstInterval = 3600 864000 1814400
       - Between 10 days and 21 days
     - ExtForceFile = FlowFM.ext # ExtForceFile with NO MET data
+  - Changed nodes to 2
+    - In test.slurm and submit_singularity.sh
   - Made new submit_singularity_map.sh to test if '$singularitydir/execute_singularity.sh run_dfmoutput.sh -- mapmerge --infile *_map.nc' line works
-  - Pending...
+  - Running
 
 
 08/17/24:
