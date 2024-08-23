@@ -1,5 +1,26 @@
 Log of DelftFM runs
 
+08/23/24:
+- Job 20006593 (TwinHarbors_test20):
+  - This Job is TIDES ONLY, but added everything else to prepare
+  - Added in all relevant files (*.pli, *.bc, *.ext, *.slurm, *.sh, *amp, *amu, *amv, etc)
+  - Created new forcing file names:
+    - FlowFM.ext: ExtForceFile with NO MET data
+    - FlowFM_MET.ext: ExtForceFile WITH MET data
+    - FlowFM_bnd_TM.ext: ExtForceFileNew with tides only
+    - FlowFM_bnd_TMD.ext: ExtForceFileNew with tides AND discharge
+  - Changed FlowFM.mdu
+    - RefDate = 20211201
+    - TStart = 0
+    - TStop = 4402800
+    - HisInterval = 3600 0 4402800
+    - MapInterval = 3600 0 4402800
+    - RstInterval = 3600 864000 1814400
+      - Between 10 days and 21 days
+    - ExtForceFile = FlowFM.ext # ExtForceFile with NO MET data
+  - Made new submit_singularity_map.sh to test if '$singularitydir/execute_singularity.sh run_dfmoutput.sh -- mapmerge --infile *_map.nc' line works
+
+
 08/17/24:
 - Job 19936754 (TwinHarbors_test19):
   - Running on compute (mem=150G) b/c compute-bigmem was busy
