@@ -14,8 +14,11 @@ Log of DelftFM runs
       - TStop = 4402800
       - HisInterval = 3600 0 4402800
       - MapInterval = 3600 0 4402800
+      - Individual FlowFM_00*.mdu files had the same configuration
     - slurm-20061338.out shows that iterations ended abruptly and then excecuted --mapmerge right after (line 869307)
     - Water height at Willapa is set at constant throughout time series
+    - Lots of errors with FlowFM_merged_map.nc saying cannot merge variables, also really small (840MB)
+      - BUT when downloading individual *_map.nc files, they have waterlevels, velocity, etc
 
 
 
