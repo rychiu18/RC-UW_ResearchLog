@@ -1,5 +1,14 @@
 Log of DelftFM runs
 
+08/26/24:
+- Job 20158753 (TwinHarbors_test20):
+  - Run with TIDES only
+  - Testing with start time on December 8, 2021 (604800 seconds after 12-01-2021)
+  - FlowFM.mdu:
+    - TStart = 604800
+    - HisInterval = 3600 604800 4402800
+    - MapInterval = 3600 604800 4402800
+
 08/25/24:
 - Job20061338 (TwinHarbors_test20):
   - Run with TIDES only
