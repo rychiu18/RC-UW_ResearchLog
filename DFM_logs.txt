@@ -1,6 +1,9 @@
 Log of DelftFM runs
 
 08/26/24:
+- Use NOAA_WL_stations_new.xyn file in 'masterfiles' directory
+  - Changed Westport (-124.099941                46.908078 'WPTW1') and Tokepoint (-123.962044                46.703043 'TOKW1')
+
 - Job 20158753 (TwinHarbors_test20):
   - Run with TIDES only
   - Testing with start time on December 8, 2021 (604800 seconds after 12-01-2021)
