@@ -1,5 +1,14 @@
 Log of DelftFM runs
 
+08/25/24:
+- Job20061338 (TwinHarbors_test20):
+  - Run with TIDES only
+  - Rerun of Job20017662 with changes bc that job did not work
+  - Changes to FlowFM.mdu
+    - ExtForceFile = # left blank b/c no MET
+    - Wrihis_wind = 0
+    - Wrimap_wind = 0
+
 08/23/24:
 - Job 20017662 (TwinHarbors_test20):
   - This Job is TIDES ONLY, but added everything else to prepare
@@ -23,6 +32,7 @@ Log of DelftFM runs
   - Made new submit_singularity_map.sh to test if '$singularitydir/execute_singularity.sh run_dfmoutput.sh -- mapmerge --infile *_map.nc' line works
     - Only ran up to December 31, 2021 before cancelling job (took 15 hours to get here)
       - Took way longer than usual, maybe because more output variables were chosen? Will investigate data to see how it looks...
+      - Data looks bad, everywhere has constant water levels
 
 
 08/17/24:
