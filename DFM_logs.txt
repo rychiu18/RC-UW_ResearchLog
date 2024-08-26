@@ -8,6 +8,16 @@ Log of DelftFM runs
     - ExtForceFile = # left blank b/c no MET
     - Wrihis_wind = 0
     - Wrimap_wind = 0
+  - Completed after 10 hours BUT ended on 2021-12-30T03:00:00.00000000 instead of 2022-01-20
+    - test.slurm has --time=72:00:00
+    - FlowFM.mdu has:
+      - TStop = 4402800
+      - HisInterval = 3600 0 4402800
+      - MapInterval = 3600 0 4402800
+    - slurm-20061338.out shows that iterations ended abruptly and then excecuted --mapmerge right after (line 869307)
+    - Water height at Willapa is set at constant throughout time series
+
+
 
 08/23/24:
 - Job 20017662 (TwinHarbors_test20):
