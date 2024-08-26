@@ -1,8 +1,9 @@
 Log of DelftFM runs
 
 08/26/24:
-- Use NOAA_WL_stations_new.xyn file in 'masterfiles' directory
+- Use NOAA_WL_obs_new.xyn file in 'masterfiles' directory
   - Changed Westport (-124.099941                46.908078 'WPTW1') and Tokepoint (-123.962044                46.703043 'TOKW1')
+  - Copied this new file into TwinHarbors_test17, TwinHarbors_test18, TwinHarbors_test19, TwinHarbors_test20
 
 - Job 20158753 (TwinHarbors_test20):
   - Run with TIDES only
