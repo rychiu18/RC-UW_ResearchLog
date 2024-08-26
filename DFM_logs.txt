@@ -20,6 +20,7 @@ Log of DelftFM runs
     - Lots of errors with FlowFM_merged_map.nc saying cannot merge variables, also really small (840MB)
       - BUT when downloading individual *_map.nc files, they have waterlevels, velocity, etc
       - FlowFM_merged_map.nc has no data after running submit_singularity_map.nc (merge file)
+    - Comparisons of results at main stations are <3mm except for Montesano (<1cm)
 
 
 
