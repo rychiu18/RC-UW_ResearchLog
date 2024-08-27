@@ -1,5 +1,79 @@
 Log of DelftFM runs
 
+08/26/24:
+- Job 20171634 (TwinHarbors_test20):
+  - Run with TIDES only
+  - Using restartfile starting on 20211222_000000 and running until 20220120 to see if something is really limiting it to 30/31 run time (does not work because restartfile can't merge)
+  - FlowFM.mdu:
+    - TStart = 2073600 # December 25, 2021
+    - HisInterval                       = 3600 2073600 4402800
+    - MapInterval                       = 3600 2073600 4402800
+    - RstInterval                       = 3600 2764800 3024000 (32 to 35 days) 
+  - Also using the new NOAA_WL_obs_new.xyn with adjusted coordinates for Westport and Tokepoint
+
+Other:
+- Use NOAA_WL_obs_new.xyn file in 'masterfiles' directory
+  - Changed Westport (-124.099941                46.908078 'WPTW1') and Tokepoint (-123.962044                46.703043 'TOKW1')
+  - Copied this new file into TwinHarbors_test17, TwinHarbors_test18, TwinHarbors_test19, TwinHarbors_test20
+
+- Job 20158753 (TwinHarbors_test20):
+  - Run with TIDES only
+  - Testing with start time on December 8, 2021 (604800 seconds after 12-01-2021)
+  - FlowFM.mdu:
+    - TStart = 604800
+    - HisInterval = 3600 604800 4402800
+    - MapInterval = 3600 604800 4402800
+
+08/25/24:
+- Job20061338 (TwinHarbors_test20):
+  - Run with TIDES only
+  - Rerun of Job20017662 with changes bc that job did not work
+  - Changes to FlowFM.mdu
+    - ExtForceFile = # left blank b/c no MET
+    - Wrihis_wind = 0
+    - Wrimap_wind = 0
+  - Completed after 10 hours BUT ended on 2021-12-30T03:00:00.00000000 instead of 2022-01-20
+    - test.slurm has --time=72:00:00
+    - FlowFM.mdu has:
+      - TStop = 4402800
+      - HisInterval = 3600 0 4402800
+      - MapInterval = 3600 0 4402800
+      - Individual FlowFM_00*.mdu files had the same configuration
+    - slurm-20061338.out shows that iterations ended abruptly and then excecuted --mapmerge right after (line 869307)
+    - Water height at Willapa is set at constant throughout time series
+    - Lots of errors with FlowFM_merged_map.nc saying cannot merge variables, also really small (840MB)
+      - BUT when downloading individual *_map.nc files, they have waterlevels, velocity, etc
+      - FlowFM_merged_map.nc has no data after running submit_singularity_map.nc (merge file)
+    - Comparisons of results at main stations are <3mm except for Montesano (<1cm)
+
+
+
+08/23/24:
+- Job 20017662 (TwinHarbors_test20):
+  - This Job is TIDES ONLY, but added everything else to prepare
+  - Added in all relevant files (*.pli, *.bc, *.ext, *.slurm, *.sh, *amp, *amu, *amv, *xyn, etc)
+  - Created new forcing file names:
+    - FlowFM.ext: ExtForceFile with NO MET data
+    - FlowFM_MET.ext: ExtForceFile WITH MET data
+    - FlowFM_bnd_TM.ext: ExtForceFileNew with tides only
+    - FlowFM_bnd_TMD.ext: ExtForceFileNew with tides AND discharge
+  - Changed FlowFM.mdu
+    - RefDate = 20211201
+    - TStart = 0
+    - TStop = 4402800
+    - HisInterval = 3600 0 4402800
+    - MapInterval = 3600 0 4402800
+    - RstInterval = 3600 864000 1814400
+      - Between 10 days and 21 days
+    - ExtForceFile = FlowFM.ext # ExtForceFile with NO MET data
+  - Changed nodes to 2
+    - In test.slurm and submit_singularity.sh
+  - Made new submit_singularity_map.sh to test if '$singularitydir/execute_singularity.sh run_dfmoutput.sh -- mapmerge --infile *_map.nc' line works
+    - Only ran up to December 31, 2021 before cancelling job (took 15 hours to get here)
+      - Took way longer than usual, maybe because more output variables were chosen? Will investigate data to see how it looks...
+      - Data looks bad, everywhere has constant water levels
+
+
 08/17/24:
 - Job 19936754 (TwinHarbors_test19):
   - Running on compute (mem=150G) b/c compute-bigmem was busy
