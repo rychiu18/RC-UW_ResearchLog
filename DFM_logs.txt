@@ -10,6 +10,8 @@ Log of DelftFM runs
     - MapInterval                       = 3600 2073600 4402800
     - RstInterval                       = 3600 2764800 3024000 (32 to 35 days) 
   - Also using the new NOAA_WL_obs_new.xyn with adjusted coordinates for Westport and Tokepoint
+  - Completed in 8h34m and merged file looks good!
+    - So issue must be with a time limit of 30/31 days
 
 Other:
 - Use NOAA_WL_obs_new.xyn file in 'masterfiles' directory
