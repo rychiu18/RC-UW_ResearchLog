@@ -1,6 +1,17 @@
 Log of DelftFM runs
 
 08/26/24:
+- Job 20171634 (TwinHarbors_test20):
+  - Run with TIDES only
+  - Using restartfile starting on 20211222_000000 and running until 20220120 to see if something is really limiting it to 30/31 run time (does not work because restartfile can't merge)
+  - FlowFM.mdu:
+    - TStart = 2073600 # December 25, 2021
+    - HisInterval                       = 3600 2073600 4402800
+    - MapInterval                       = 3600 2073600 4402800
+    - RstInterval                       = 3600 2764800 3024000 (32 to 35 days) 
+  - Also using the new NOAA_WL_obs_new.xyn with adjusted coordinates for Westport and Tokepoint
+
+Other:
 - Use NOAA_WL_obs_new.xyn file in 'masterfiles' directory
   - Changed Westport (-124.099941                46.908078 'WPTW1') and Tokepoint (-123.962044                46.703043 'TOKW1')
   - Copied this new file into TwinHarbors_test17, TwinHarbors_test18, TwinHarbors_test19, TwinHarbors_test20
