@@ -1,5 +1,16 @@
 Log of DelftFM runs
 
+08/27/24:
+- Job (TwinHarbors_test17):
+  - Running with ONLY tides
+  - Using new NOAA_WL_obs_new.xyn file from masterfiles
+  - Change MapInterval and HisInterval to start on December 1, 2023 to decrease storage space
+  - Use old Stantec's north.pli file 
+  - Use new grid (v4) from Yingzhong
+  - Use new roughness file from Yingzhong
+  - FlowFM.mdu:
+    - 
+
 08/26/24:
 - Job 20171634 (TwinHarbors_test20):
   - Run with TIDES only
@@ -80,6 +91,7 @@ Other:
 08/17/24:
 - Job 19936754 (TwinHarbors_test19):
   - Running on compute (mem=150G) b/c compute-bigmem was busy
+  - Ran with final_mesh_net.nc grid (v2)
   - Tides, MET, and Discharge
   - Newest grid (with sloughs, created on Aug 9) - 'final_mesh_net.nc' from /gscratch/derakhti/users/yzlou/Delft3dfm/TwinHarbors_test2/dflowfm/final_mesh_net.nc
   - Added 'pickle.slurm' and 'writeDFMvars.py' scripts to folder to isolate
@@ -94,7 +106,7 @@ Other:
 08/16/24:
 - Job 19928355 (TwinHarbors_test18):
   - Tides and MET
-  - Newest grid (with sloughs, created on Aug 9) - 'final_mesh_net.nc' from /gscratch/derakhti/users/yzlou/Delft3dfm/TwinHarbors_test2/dflowfm/final_mesh_net.nc
+  - Newest grid (with sloughs, created on Aug 9, v2) - 'final_mesh_net.nc' from /gscratch/derakhti/users/yzlou/Delft3dfm/TwinHarbors_test2/dflowfm/final_mesh_net.nc
   - Added 'pickle.slurm' and 'writeDFMvars.py' scripts to folder to isolate
   - Changes to FlowFM.mdu
           - NetFile = final_mesh_net.nc
@@ -108,7 +120,7 @@ Other:
 08/15/24:
 - Job 19922312 (TwinHarbors_test17):
   - Tides only
-  - Newest grid (with sloughs, created on Aug 9) - 'final_mesh_net.nc' from /gscratch/derakhti/users/yzlou/Delft3dfm/TwinHarbors_test2/dflowfm/final_mesh_net.nc
+  - Newest grid (with sloughs, created on Aug 9, v2) - 'final_mesh_net.nc' from /gscratch/derakhti/users/yzlou/Delft3dfm/TwinHarbors_test2/dflowfm/final_mesh_net.nc
   - Added new observation file to folder - 'NOAA_WL_obs_new.xyn'
   - Added 'pickle.slurm' and 'writeDFMvars.py' scripts to folder to isolate
   - Changes to FlowFM.mdu
@@ -125,12 +137,15 @@ Other:
   - Running for tides and MET
   - Rerunning to verify MET data is being used and FlowFM_merged wasn't a merge of tides only run
     - Because when comparing Model T and TM, SSH is exactly the same everywhere
+  - Using final_mesh_net.nc (v2)
 
 08/09/24:
 - Job 19883575 (TwinHarbors_test19):
   - Running for tides, MET, and discharge
+  - Using final_mesh_net.nc (v2)
 - Job 19883552 (TwinHarbors_test17):
   - Running for tides only
+  - Using final_mesh_net.nc (v2)
   - Running again bc accidentally overwrote FlowFM_merged_map.nc file with one from TwinHarbors_test18
   - Completed
 
@@ -147,7 +162,7 @@ Other:
 - Job 19870441 (TwinHarbors_test17):
   - Running for tides only
   - Model run for November 23 - December 12, 2023 to compare with 07/23/24 model run with new grid
-  - Using new grid (final_mesh_net_new.nc)
+  - Using new grid (final_mesh_net_new.nc, v1)
   - Outputting restart files: RstInterval = 3600 2505600 2937600 (from November 30 to December 5 in case we need that info)
   - Finished in ~7 hours
     - Could not find NOAA_9439040, WILLAPA-USGS
