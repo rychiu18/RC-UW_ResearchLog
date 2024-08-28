@@ -1,6 +1,6 @@
 Log of DelftFM runs
 
-08/27/24:
+08/28/24:
 - Job (TwinHarbors_test17):
   - Running with ONLY tides
   - Using new NOAA_WL_obs_new.xyn file from masterfiles
@@ -9,7 +9,17 @@ Log of DelftFM runs
   - Use new grid (v4) from Yingzhong
   - Use new roughness file from Yingzhong
   - FlowFM.mdu:
-    - 
+    - HisInterval = 3600 2592000 3538800
+    - MapInterval = 3600 2592000 3538800
+    - RstInterval = 3600 1900800 2937600
+
+- Renamed final_mesh_net.nc files to v1, v2, and v3 and transferred to TwinHarbors_test17, 18, 19, 20  and masterfiles directory
+- Renamed FlowFM_bnd_test.ext to FlowFM_bnd.ext
+- Renamed FlowFM_test.ext to FlowFM.ext
+- Added roughness block to FlowFM.ext for TwinHarbors_test17, 18, 19, and 20 (original block in masterfiles directory)
+- Added new roughness file from Yingzhong (/gscratch/derakhti/users/yzlou/Delft3d/TwinHarbors_test2/dflowfm/roughness.xyz) to TwinHarbors_test17, 18, 19, 20 and masterfiles directory
+- Added new oc_north.pli file (old Stantec coordinates b/c Yingzhong corrected grid to fix it) to TwinHarbors_test17, 18, 19, 20 and masterfiles directory
+- Changed FlowFM.mdu file in TwinHarbors_test17, 18, 19, and 20 (final_mesh_net_v3.nc, HisInterval and MapInterval to start after spinup period, FlowFM_bnd.ext and FlowFM.ext names)
 
 08/26/24:
 - Job 20171634 (TwinHarbors_test20):
