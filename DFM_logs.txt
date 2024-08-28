@@ -96,6 +96,10 @@ Other:
     - Only ran up to December 31, 2021 before cancelling job (took 15 hours to get here)
       - Took way longer than usual, maybe because more output variables were chosen? Will investigate data to see how it looks...
       - Data looks bad, everywhere has constant water levels
+- Job 20007173( TwinHarbors_test20)
+  - TIDES ONLY run
+  - Cancelled after 15 hours because it was taking very long
+  - Only ran up to December 31
 
 
 08/17/24:
