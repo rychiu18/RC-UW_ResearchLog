@@ -1,5 +1,13 @@
 Log of DelftFM runs
 
+08/30/24:
+- Job (TwinHarbors_test17):
+  - FlowFM.mdu
+    - NOAA_WL_obs_new_v4.xyn
+    - RstInterval = 86400 2592000 2937600 # daily interval
+    - RestartFile = FlowFM_
+    - RestartDateTime = 20231201
+
 08/29/24:
 - Job 20366009 (TwinHarbors_test18):
   - Running with tides and MET
