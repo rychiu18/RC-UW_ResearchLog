@@ -1,7 +1,7 @@
 Log of DelftFM runs
 
-08/30/24:
-- Job (TwinHarbors_test17):
+09/ /24:
+- Job (TwinHarbors_test17) - HAVE NOT RUN YET:
   - FlowFM.mdu
     - NOAA_WL_obs_new_v4.xyn
     - RstInterval = 86400 2592000 2937600 # daily interval
