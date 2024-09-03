@@ -1,5 +1,63 @@
 Log of DelftFM runs
 
+- Job (TwinHarbors_test17) - HAVE NOT RUN YET:
+  - FlowFM.mdu
+    - NOAA_WL_obs_new_v4.xyn
+    - RstInterval = 86400 2592000 2937600 # daily interval
+    - RestartFile = FlowFM_merged_20231201_000000_rst.nc
+    - RestartDateTime = 20231201
+
+09/01/24:
+- Job 20468286 (TwinHarbors_test19):
+  - FlowFM.mdu
+    - NOAA_WL_obs_new_v4.xyn
+    - HisInterval = 3600 2592000 3538800
+    - MapInterval = 3600 2592000 3538800
+    - RstInterval = 86400 2592000 2937600 # daily interval
+  - NOAA_WL_obs_new_v4.xyn
+    - Changed Montesano coordinate (GH_06) to middle of channel (46.9620726162,-123.6043657054)
+  - Added roughness.xyz file and added to FlowFM.ext file
+  - nodes = 1 (changed in FlowFM.mdu and submit_singularity.sh)
+
+
+08/29/24:
+- Job 20366009 (TwinHarbors_test18):
+  - Running with tides and MET
+  - Using new NOAA_WL_obs_new_v3.xyn file from masterfiles
+    - Cleaned up coordinates and added all USGS and NOAA stations.
+  - Change MapInterval and HisInterval to start on December 1, 2023 to decrease file size
+  - Use old Stantec's north.pli file 
+  - Use new grid (v3) from Yingzhong
+  - Use new roughness file from Yingzhong
+  - FlowFM.mdu:
+    - HisInterval = 3600 2592000 3538800
+    - MapInterval = 3600 2592000 3538800
+    - RstInterval = 3600 2592000 2937600
+  - Using compute (24hr limit, mem=150G, nodes=72)
+- Job 20365503 (TwinHarbors_test17):
+  - Running with ONLY tides
+  - Using new NOAA_WL_obs_new_v3.xyn file from masterfiles
+    - Cleaned up coordinates and added all USGS and NOAA stations.
+  - Change MapInterval and HisInterval to start on December 1, 2023 to decrease file size
+  - Use old Stantec's north.pli file 
+  - Use new grid (v3) from Yingzhong
+  - Use new roughness file from Yingzhong
+  - FlowFM.mdu:
+    - HisInterval = 3600 2592000 3538800
+    - MapInterval = 3600 2592000 3538800
+    - RstInterval = 3600 2592000 2937600
+  - Using compute-bigmem (24hr limit, mem=350G, nodes=3, proc=108)
+  - Could not find flow cell USGS-SATSOP
+
+
+- Renamed final_mesh_net.nc files to v1, v2, and v3 and transferred to TwinHarbors_test17, 18, 19, 20  and masterfiles directory
+- Renamed FlowFM_bnd_test.ext to FlowFM_bnd.ext
+- Renamed FlowFM_test.ext to FlowFM.ext
+- Added roughness block to FlowFM.ext for TwinHarbors_test17, 18, 19, and 20 (original block in masterfiles directory)
+- Added new roughness file from Yingzhong (/gscratch/derakhti/users/yzlou/Delft3d/TwinHarbors_test2/dflowfm/roughness.xyz) to TwinHarbors_test17, 18, 19, 20 and masterfiles directory
+- Added new oc_north.pli file (old Stantec coordinates b/c Yingzhong corrected grid to fix it) to TwinHarbors_test17, 18, 19, 20 and masterfiles directory
+- Changed FlowFM.mdu file in TwinHarbors_test17, 18, 19, and 20 (final_mesh_net_v3.nc, HisInterval and MapInterval to start after spinup period, FlowFM_bnd.ext and FlowFM.ext names)
+
 08/26/24:
 - Job 20171634 (TwinHarbors_test20):
   - Run with TIDES only
@@ -10,6 +68,8 @@ Log of DelftFM runs
     - MapInterval                       = 3600 2073600 4402800
     - RstInterval                       = 3600 2764800 3024000 (32 to 35 days) 
   - Also using the new NOAA_WL_obs_new.xyn with adjusted coordinates for Westport and Tokepoint
+  - Completed in 8h34m and merged file looks good!
+    - So issue must be with a time limit of 30/31 days
 
 Other:
 - Use NOAA_WL_obs_new.xyn file in 'masterfiles' directory
@@ -23,6 +83,7 @@ Other:
     - TStart = 604800
     - HisInterval = 3600 604800 4402800
     - MapInterval = 3600 604800 4402800
+  - Exited abruptly on January 8th, could not run merge file as well
 
 08/25/24:
 - Job20061338 (TwinHarbors_test20):
@@ -45,8 +106,6 @@ Other:
       - BUT when downloading individual *_map.nc files, they have waterlevels, velocity, etc
       - FlowFM_merged_map.nc has no data after running submit_singularity_map.nc (merge file)
     - Comparisons of results at main stations are <3mm except for Montesano (<1cm)
-
-
 
 08/23/24:
 - Job 20017662 (TwinHarbors_test20):
@@ -72,11 +131,16 @@ Other:
     - Only ran up to December 31, 2021 before cancelling job (took 15 hours to get here)
       - Took way longer than usual, maybe because more output variables were chosen? Will investigate data to see how it looks...
       - Data looks bad, everywhere has constant water levels
+- Job 20007173( TwinHarbors_test20)
+  - TIDES ONLY run
+  - Cancelled after 19 hours because it was taking very long
+  - Only modeled 9 days
 
 
 08/17/24:
 - Job 19936754 (TwinHarbors_test19):
   - Running on compute (mem=150G) b/c compute-bigmem was busy
+  - Ran with final_mesh_net.nc grid (v2)
   - Tides, MET, and Discharge
   - Newest grid (with sloughs, created on Aug 9) - 'final_mesh_net.nc' from /gscratch/derakhti/users/yzlou/Delft3dfm/TwinHarbors_test2/dflowfm/final_mesh_net.nc
   - Added 'pickle.slurm' and 'writeDFMvars.py' scripts to folder to isolate
@@ -91,7 +155,7 @@ Other:
 08/16/24:
 - Job 19928355 (TwinHarbors_test18):
   - Tides and MET
-  - Newest grid (with sloughs, created on Aug 9) - 'final_mesh_net.nc' from /gscratch/derakhti/users/yzlou/Delft3dfm/TwinHarbors_test2/dflowfm/final_mesh_net.nc
+  - Newest grid (with sloughs, created on Aug 9, v2) - 'final_mesh_net.nc' from /gscratch/derakhti/users/yzlou/Delft3dfm/TwinHarbors_test2/dflowfm/final_mesh_net.nc
   - Added 'pickle.slurm' and 'writeDFMvars.py' scripts to folder to isolate
   - Changes to FlowFM.mdu
           - NetFile = final_mesh_net.nc
@@ -105,7 +169,7 @@ Other:
 08/15/24:
 - Job 19922312 (TwinHarbors_test17):
   - Tides only
-  - Newest grid (with sloughs, created on Aug 9) - 'final_mesh_net.nc' from /gscratch/derakhti/users/yzlou/Delft3dfm/TwinHarbors_test2/dflowfm/final_mesh_net.nc
+  - Newest grid (with sloughs, created on Aug 9, v2) - 'final_mesh_net.nc' from /gscratch/derakhti/users/yzlou/Delft3dfm/TwinHarbors_test2/dflowfm/final_mesh_net.nc
   - Added new observation file to folder - 'NOAA_WL_obs_new.xyn'
   - Added 'pickle.slurm' and 'writeDFMvars.py' scripts to folder to isolate
   - Changes to FlowFM.mdu
@@ -122,12 +186,15 @@ Other:
   - Running for tides and MET
   - Rerunning to verify MET data is being used and FlowFM_merged wasn't a merge of tides only run
     - Because when comparing Model T and TM, SSH is exactly the same everywhere
+  - Using final_mesh_net.nc (v2)
 
 08/09/24:
 - Job 19883575 (TwinHarbors_test19):
   - Running for tides, MET, and discharge
+  - Using final_mesh_net_new.nc (v1)
 - Job 19883552 (TwinHarbors_test17):
   - Running for tides only
+  - Using final_mesh_net.nc (v2)
   - Running again bc accidentally overwrote FlowFM_merged_map.nc file with one from TwinHarbors_test18
   - Completed
 
@@ -144,7 +211,7 @@ Other:
 - Job 19870441 (TwinHarbors_test17):
   - Running for tides only
   - Model run for November 23 - December 12, 2023 to compare with 07/23/24 model run with new grid
-  - Using new grid (final_mesh_net_new.nc)
+  - Using new grid (final_mesh_net_new.nc, v1)
   - Outputting restart files: RstInterval = 3600 2505600 2937600 (from November 30 to December 5 in case we need that info)
   - Finished in ~7 hours
     - Could not find NOAA_9439040, WILLAPA-USGS
