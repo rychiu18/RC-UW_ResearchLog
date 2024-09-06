@@ -1,5 +1,15 @@
 Log of DelftFM runs
 
+09/06/24:
+- Job 20676065 (TwinHarbors_test19):
+  - Tides+MET+discharge
+  - final_mesh_net_v4.nc (version 4 of grid - using default roughness)
+  - Removed removed roughness.xyz block from FlowFM.ext file
+  - FlowFM.mdu
+    - NetFile = final_mesh_net_v4.nc
+    - UnifFrictCoef = 0.023
+    - ObsFile = NOAA_WL_obs_new_v4.xyn
+
 09/05/24:
 - Job 20576788 (TwinHarbors_test18):
   - Tides + MET
