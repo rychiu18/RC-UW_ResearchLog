@@ -1,11 +1,16 @@
 Log of DelftFM runs
 
-- Job (TwinHarbors_test17) - HAVE NOT RUN YET:
+09/05/24:
+- Job 20576405 (TwinHarbors_test17):
+  - Tides only
+  - final_mesh_net_v4.nc (version 4 of grid - using default roughness)
+  - Removed removed roughness.xyz block from FlowFM.ext file
   - FlowFM.mdu
-    - NOAA_WL_obs_new_v4.xyn
+    - NetFile = final_mesh_net_v4.nc
+    - UnifFrictCoef = 0.023
+    - Removed RestartFile and RestartDateTime
+    - ObsFile = NOAA_WL_obs_new_v4.xyn
     - RstInterval = 86400 2592000 2937600 # daily interval
-    - RestartFile = FlowFM_merged_20231201_000000_rst.nc
-    - RestartDateTime = 20231201
 
 09/01/24:
 - Job 20468286 (TwinHarbors_test19):
