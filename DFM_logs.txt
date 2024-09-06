@@ -1,7 +1,7 @@
 Log of DelftFM runs
 
 09/05/24:
-- Job (TwinHarbors_test18):
+- Job 20576788 (TwinHarbors_test18):
   - Tides + MET
   - final_mesh_net_v4.nc (version 4 of grid - using default roughness)
   - Removed removed roughness.xyz block from FlowFM.ext file
