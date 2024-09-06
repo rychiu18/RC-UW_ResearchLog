@@ -1,6 +1,16 @@
 Log of DelftFM runs
 
 09/05/24:
+- Job (TwinHarbors_test18):
+  - Tides + MET
+  - final_mesh_net_v4.nc (version 4 of grid - using default roughness)
+  - Removed removed roughness.xyz block from FlowFM.ext file
+  - FlowFM.mdu
+    - NetFile = final_mesh_net_v4.nc
+    - UnifFrictCoef = 0.023
+    - Removed RestartFile and RestartDateTime
+    - ObsFile = NOAA_WL_obs_new_v4.xyn
+    - RstInterval = 86400 2592000 2937600 # daily interval
 - Job 20576405 (TwinHarbors_test17):
   - Tides only
   - final_mesh_net_v4.nc (version 4 of grid - using default roughness)
