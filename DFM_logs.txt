@@ -1,7 +1,7 @@
 Log of DelftFM runs
 
 09/07/24:
-- Job 20757331 (TwinHarbors_test19):
+- Job 20758171 (TwinHarbors_test19):
   - Tides+MET+discharge
   - Using final_mesh_net_v2.nc with previous roughness (see if roughness actually models compound flooding better)
   - FlowFM.ext
@@ -12,6 +12,7 @@ Log of DelftFM runs
     - OPERAND=O
   - FlowFM.mdu 
     - NetFile = final_mesh_net_v2.nc
+  - RAN IN /gscratch/stf/rchiu18/ FOLDER B/C DERAKHTI GROUP IS OUT OF STORAGE!!!
 
 09/06/24:
 - Job 20676065 (TwinHarbors_test19):
