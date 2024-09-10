@@ -1,11 +1,52 @@
 Log of DelftFM runs
 
-- Job (TwinHarbors_test17) - HAVE NOT RUN YET:
+09/07/24:
+- Job 20758171 (TwinHarbors_test19):
+  - Tides+MET+discharge
+  - Using final_mesh_net_v2.nc with previous roughness (see if roughness actually models compound flooding better)
+  - FlowFM.ext
+    - QUANTITY=frictioncoefficient
+    - FILENAME=roughness.xyz
+    - FILETYPE=7
+    - METHOD=5
+    - OPERAND=O
+  - FlowFM.mdu 
+    - NetFile = final_mesh_net_v2.nc
+  - RAN IN /gscratch/stf/rchiu18/ FOLDER B/C DERAKHTI GROUP IS OUT OF STORAGE!!!
+  - Completed
+    - Did not seem right, maybe had to leave [physics] Friction terms in FlowFM.mdu empty?
+
+09/06/24:
+- Job 20676065 (TwinHarbors_test19):
+  - Tides+MET+discharge
+  - final_mesh_net_v4.nc (version 4 of grid - using default roughness)
+  - Removed removed roughness.xyz block from FlowFM.ext file
   - FlowFM.mdu
-    - NOAA_WL_obs_new_v4.xyn
+    - NetFile = final_mesh_net_v4.nc
+    - UnifFrictCoef = 0.023
+    - ObsFile = NOAA_WL_obs_new_v4.xyn
+
+09/05/24:
+- Job 20576788 (TwinHarbors_test18):
+  - Tides + MET
+  - final_mesh_net_v4.nc (version 4 of grid - using default roughness)
+  - Removed removed roughness.xyz block from FlowFM.ext file
+  - FlowFM.mdu
+    - NetFile = final_mesh_net_v4.nc
+    - UnifFrictCoef = 0.023
+    - Removed RestartFile and RestartDateTime
+    - ObsFile = NOAA_WL_obs_new_v4.xyn
     - RstInterval = 86400 2592000 2937600 # daily interval
-    - RestartFile = FlowFM_merged_20231201_000000_rst.nc
-    - RestartDateTime = 20231201
+- Job 20576405 (TwinHarbors_test17):
+  - Tides only
+  - final_mesh_net_v4.nc (version 4 of grid - using default roughness)
+  - Removed removed roughness.xyz block from FlowFM.ext file
+  - FlowFM.mdu
+    - NetFile = final_mesh_net_v4.nc
+    - UnifFrictCoef = 0.023
+    - Removed RestartFile and RestartDateTime
+    - ObsFile = NOAA_WL_obs_new_v4.xyn
+    - RstInterval = 86400 2592000 2937600 # daily interval
 
 09/01/24:
 - Job 20468286 (TwinHarbors_test19):
