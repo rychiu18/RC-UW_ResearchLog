@@ -13,6 +13,8 @@ Log of DelftFM runs
   - FlowFM.mdu 
     - NetFile = final_mesh_net_v2.nc
   - RAN IN /gscratch/stf/rchiu18/ FOLDER B/C DERAKHTI GROUP IS OUT OF STORAGE!!!
+  - Completed
+    - Did not seem right, maybe had to leave [physics] Friction terms in FlowFM.mdu empty?
 
 09/06/24:
 - Job 20676065 (TwinHarbors_test19):
