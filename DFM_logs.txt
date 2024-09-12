@@ -1,5 +1,23 @@
 Log of DelftFM runs
 
+09/11/24:
+- Job 20832646 (TwinHarbors_test19b):
+  - Tides+MET+discharge
+  - Using grid version 5.2
+  - FlowFM.mdu
+    - NetFile = final_mesh_net_v5.1.nc
+    - Removed sample_fxw.pliz from FixedWeirFile variable
+    - Epshu = 0.0001 (used to be 0.1 but switched to match Yingzhong's .mdu file)
+  - Using default roughness
+- Job 20832539 (TwinHarbors_test19):
+  - Tides+MET+discharge
+  - Using grid version 5.1
+  - FlowFM.mdu
+    - NetFile = final_mesh_net_v5.1.nc
+    - Removed sample_fxw.pliz from FixedWeirFile variable
+    - Epshu = 0.0001 (used to be 0.1 but switched to match Yingzhong's .mdu file)
+  - Using default roughness
+
 09/07/24:
 - Job 20758171 (TwinHarbors_test19):
   - Tides+MET+discharge
