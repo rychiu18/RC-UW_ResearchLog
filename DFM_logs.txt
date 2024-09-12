@@ -1,5 +1,14 @@
 Log of DelftFM runs
 
+09/12/24:
+- Job 20837133 (TwinHarbors_test19):
+  - Tides+MET+discharge
+  - Using grid version 5.4
+  - FlowFM.mdu
+    - NetFile = final_mesh_net_v5.4.nc
+    - Epshu = 0.1 (switching back bc 0.1 is used in previous runs, and is DFM default)
+    - Using default roughness
+
 09/11/24:
 - Job 20832646 (TwinHarbors_test19b):
   - Tides+MET+discharge
@@ -7,10 +16,12 @@ Log of DelftFM runs
   - FlowFM.mdu
     - NetFile = final_mesh_net_v5.1.nc
     - Removed sample_fxw.pliz from FixedWeirFile variable
-    - Epshu = 0.0001 (used to be 0.1 but switched to match Yingzhong's .mdu file)
+    - Epshu = 0.0001 (ROMS default) (used to be 0.1 but switched to match Yingzhong's .mdu file)
   - Using default roughness
+  - Ran with 2 nodes
   - Results: 
     - Not as muted as v4, but still muted a little especially during peak water levels
+    - Completed and finished in ~17 hours
 - Job 20832539 (TwinHarbors_test19):
   - Tides+MET+discharge
   - Using grid version 5.1
@@ -19,8 +30,10 @@ Log of DelftFM runs
     - Removed sample_fxw.pliz from FixedWeirFile variable
     - Epshu = 0.0001 (used to be 0.1 but switched to match Yingzhong's .mdu file)
   - Using default roughness
+  - Ran with 2 nodes
   - Results:
     - Better than v4 at simulating tidal signals, but fails to simulate elevated water levels on 12-05-2023
+    - Cancelled after 17:10:19 to run other models (ran up to 12-08-2024T15:00)
 
 09/07/24:
 - Job 20758171 (TwinHarbors_test19):
