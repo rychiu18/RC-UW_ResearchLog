@@ -1,6 +1,11 @@
 Log of DelftFM runs
 
 09/12/24:
+## Fun test:
+- Job (TwinHarbors_test19b):
+  - Rerun of Job 20832539 but with Epshu=0.1
+  - Using ckpt for derakhti (20 nodes)
+
 - Job 20837133 (TwinHarbors_test19):
   - Tides+MET+discharge
   - Using grid version 5.4
