@@ -9,6 +9,8 @@ Log of DelftFM runs
     - Removed sample_fxw.pliz from FixedWeirFile variable
     - Epshu = 0.0001 (used to be 0.1 but switched to match Yingzhong's .mdu file)
   - Using default roughness
+  - Results: 
+    - Not as muted as v4, but still muted a little especially during peak water levels
 - Job 20832539 (TwinHarbors_test19):
   - Tides+MET+discharge
   - Using grid version 5.1
@@ -17,6 +19,8 @@ Log of DelftFM runs
     - Removed sample_fxw.pliz from FixedWeirFile variable
     - Epshu = 0.0001 (used to be 0.1 but switched to match Yingzhong's .mdu file)
   - Using default roughness
+  - Results:
+    - Better than v4 at simulating tidal signals, but fails to simulate elevated water levels on 12-05-2023
 
 09/07/24:
 - Job 20758171 (TwinHarbors_test19):
