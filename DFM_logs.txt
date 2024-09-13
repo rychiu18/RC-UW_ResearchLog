@@ -2,9 +2,11 @@ Log of DelftFM runs
 
 09/12/24:
 ## Fun test:
-- Job (TwinHarbors_test19b):
+- Job 20839246 (TwinHarbors_test19b):
   - Rerun of Job 20832539 but with Epshu=0.1
-  - Using ckpt for derakhti (20 nodes)
+  - Using ckpt-all partition for derakhti- (8 nodes)
+  - Got up to 12052023_000000_rst.nc restart file 
+  - Rerun again with normal nodes from 12012023 bc nodes available now
 
 - Job 20837133 (TwinHarbors_test19):
   - Tides+MET+discharge
