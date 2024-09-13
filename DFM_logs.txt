@@ -1,7 +1,7 @@
 Log of DelftFM runs
 
 09/13/24:
-- Job 20840313 (TwinHarbors_test19b):
+- Job 20840403 (TwinHarbors_test19b):
   - Rerun of Job 20839246 (which used checkpoint)
   - Used restart file from 12012023 to rerun
   - This time, Epshu = 0.1
@@ -13,7 +13,7 @@ Log of DelftFM runs
 - Job 20839246 (TwinHarbors_test19b):
   - Rerun of Job 20832539 but with Epshu=0.1
   - Using ckpt-all partition for derakhti- (8 nodes)
-  - Got up to 12052023_000000_rst.nc restart file 
+  - Got past 12052023 bc generated restart files from 12-01 to 12-05
   - Rerun again with normal nodes from 12012023 bc nodes available now
 
 - Job 20837133 (TwinHarbors_test19):
