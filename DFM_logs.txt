@@ -6,6 +6,7 @@ Log of DelftFM runs
   - Used restart file from 12012023 to rerun
   - This time, Epshu = 0.1
   - final_mesh_net_v5.1.nc (grid 5.1)
+  - Changed TStart to seconds that match 12012023 so it starts from there (TStart = 2592000)
 
 09/12/24:
 ## Fun test:
