@@ -1,5 +1,12 @@
 Log of DelftFM runs
 
+09/13/24:
+- Job 20840313 (TwinHarbors_test19b):
+  - Rerun of Job 20839246 (which used checkpoint)
+  - Used restart file from 12012023 to rerun
+  - This time, Epshu = 0.1
+  - final_mesh_net_v5.1.nc (grid 5.1)
+
 09/12/24:
 ## Fun test:
 - Job 20839246 (TwinHarbors_test19b):
