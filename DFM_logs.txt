@@ -1,6 +1,12 @@
 Log of DelftFM runs
 
 09/13/24:
+- Job 20882909 (TwinHarbors_test19):
+  - Tides+MET+discharge
+  - Using grid version 5.5
+  - FlowFM.mdu
+    - NetFile = final_mesh_net_v5.5.nc
+
 - Job 20840403 (TwinHarbors_test19b):
   - Rerun of Job 20839246 (which used checkpoint)
   - Used restart file from 12012023 to rerun
@@ -11,7 +17,7 @@ Log of DelftFM runs
 09/12/24:
 ## Fun test:
 - Job 20839246 (TwinHarbors_test19b):
-  - Rerun of Job 20832539 but with Epshu=0.1
+  - Rerun of Job 20832539 (v5.1) but with Epshu=0.1
   - Using ckpt-all partition for derakhti- (8 nodes)
   - Got past 12052023 bc generated restart files from 12-01 to 12-05
   - Rerun again with normal nodes from 12012023 bc nodes available now
