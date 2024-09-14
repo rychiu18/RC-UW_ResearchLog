@@ -1,5 +1,12 @@
 Log of DelftFM runs
 
+09/14/24:
+- Job 20886521 (TwinHarbors_test19):
+  - Tides+MET+discharge
+  - Using grid version 5.5.1
+  - FlowFM.mdu
+    - NetFile = final_mesh_net_v5.5.1.nc
+
 09/13/24:
 - Job 20882909 (TwinHarbors_test19):
   - Tides+MET+discharge
