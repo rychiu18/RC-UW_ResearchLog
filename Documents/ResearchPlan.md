@@ -16,7 +16,10 @@
 		- Evolution of storm and along channel water level profile
 
 #### b) How does the convergence length scale/bottom slope influence upstream water levels during storms?
-	- Goal: compare rate of convergence and slope between both rivers and investigate the different effects between i) shallow vs deeper channels, ii) high vs low rate of convergence at mouth, and iii) shallow vs steep slope profiles.
+	- Goal: compare rate of convergence and slope between both rivers and investigate the different effects between :
+		- i) shallow vs deeper channels, 
+		- ii) high vs low rate of convergence at mouth, and 
+		- iii) shallow vs steep slope profiles.
 	- Grays Harbor routinely dredged compared to natural Willapa Bay
 		- Deeper water -> less friction -> higher velocity -> lower surge amplitude
 
