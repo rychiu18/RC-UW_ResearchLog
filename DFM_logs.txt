@@ -1,5 +1,7 @@
 Log of DelftFM runs
 
+*Moved all proceeding runs to an excel sheet for documentation: https://docs.google.com/spreadsheets/d/1xwpSq3IvTufe_zdXXe1ZJMgLBDWGLVj1jGgF6h2NwmU/edit?usp=sharing
+
 09/14/24:
 - Job 20886521 (TwinHarbors_test19):
   - Tides+MET+discharge
