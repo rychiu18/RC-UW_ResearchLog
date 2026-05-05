@@ -3,18 +3,19 @@ hr {
   margin-bottom: 20px;
 }
 
-.site-nav a {
-  font-size: 5px !important;
-}
-
 /* Post navigation links */
 .post_navi {
   display: flex;
 }
 
-.post_navi-label {
+/* .post_navi-label {
  font-size: 0.8em;
   opacity: 0.5;
+} */
+
+.post_navi-label {
+ font-size: 0.8em;
+  opacity: 0.1;
 }
 
 .post_navi .post_navi-item {
