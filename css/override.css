@@ -27,11 +27,6 @@ hr {
   color: inherit !important;
 }
 
-/* Navigation link font size */
-.post_navi a {
-  font-size: 1px;
-}
-
 .post_navi .nav_prev {
   text-align: left;
 }
@@ -54,4 +49,9 @@ hr {
   transform: translateY(-50%);
   font-size: 2.5em;
   opacity: 0.3;
+}
+
+/* Added */
+.site-nav .page-link {
+  font-size: 16px !important;
 }
