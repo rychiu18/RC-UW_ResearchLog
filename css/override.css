@@ -27,6 +27,11 @@ hr {
   color: inherit !important;
 }
 
+/* Navigation link font size */
+.post_navi a {
+  font-size: 1px;
+}
+
 .post_navi .nav_prev {
   text-align: left;
 }
