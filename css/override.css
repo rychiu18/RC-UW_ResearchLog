@@ -4,7 +4,7 @@ hr {
 }
 
 .site-nav a {
-  font-size: 5px;
+  font-size: 5px !important;
 }
 
 /* Post navigation links */
