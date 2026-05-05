@@ -29,7 +29,7 @@ hr {
 
 /* Navigation link font size */
 .post_navi a {
-  font-size: 1px;
+  font-size: 1px !important;
 }
 
 .post_navi .nav_prev {
