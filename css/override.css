@@ -49,23 +49,23 @@ hr {
 }
 
 h1 {
-  font-size: 0.5rem;
+  font-size: 0.5px;
 }
 
 h2 { 
-  font-size: 0.5rem; 
+  font-size: 0.5px; 
 }
 
 h3 { 
-  font-size: 0.5rem; 
+  font-size: 0.5px; 
 }
 
 h4 { 
-  font-size: 0.5rem; 
+  font-size: 0.5px; 
 }
 
 h5 { 
-  font-size: 0.5rem; 
+  font-size: 0.5px; 
 }
 
 .navbar-brand {
@@ -73,5 +73,9 @@ h5 {
 }
 
 h1.post-title {
-    font-size: 0.5rem !important;
+    font-size: 0.5px !important;
+}
+
+.trigger .page-link {
+    font-size: 0.5px;
 }
